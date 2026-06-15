@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Sweden–Tunisia",
-    "updatedDate": "Jun 14",
-    "lastSync": "2026-06-15 (manual snapshot)"
+    "updatedTill": "Belgium–Egypt",
+    "updatedDate": "Jun 15",
+    "lastSync": "2026-06-15T21:35:10.632Z"
   },
   "players": [
     {
@@ -83,8 +83,8 @@
       "code": "es",
       "ab": "ESP",
       "strength": 50,
-      "gp": 0,
-      "pts": 0,
+      "gp": 1,
+      "pts": 1,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -227,8 +227,8 @@
       "code": "be",
       "ab": "BEL",
       "strength": 18,
-      "gp": 0,
-      "pts": 0,
+      "gp": 1,
+      "pts": 1,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -299,7 +299,7 @@
       "code": "ht",
       "ab": "HAI",
       "strength": 1,
-      "gp": 0,
+      "gp": 1,
       "pts": 0,
       "stage": "GROUP",
       "eliminated": false
@@ -308,8 +308,8 @@
       "code": "gb-sct",
       "ab": "SCO",
       "strength": 5,
-      "gp": 0,
-      "pts": 0,
+      "gp": 1,
+      "pts": 3,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -389,8 +389,8 @@
       "code": "eg",
       "ab": "EGY",
       "strength": 6,
-      "gp": 0,
-      "pts": 0,
+      "gp": 1,
+      "pts": 1,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -416,8 +416,8 @@
       "code": "cv",
       "ab": "CPV",
       "strength": 1,
-      "gp": 0,
-      "pts": 0,
+      "gp": 1,
+      "pts": 1,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -522,7 +522,7 @@
       "group": "A"
     },
     {
-      "date": "Jun 11",
+      "date": "Jun 12",
       "a": "Korea",
       "as": 2,
       "b": "Czechia",
@@ -531,6 +531,14 @@
     },
     {
       "date": "Jun 12",
+      "a": "Canada",
+      "as": 1,
+      "b": "Bosnia",
+      "bs": 1,
+      "group": "B"
+    },
+    {
+      "date": "Jun 13",
       "a": "USA",
       "as": 4,
       "b": "Paraguay",
@@ -539,11 +547,35 @@
     },
     {
       "date": "Jun 13",
+      "a": "Qatar",
+      "as": 1,
+      "b": "Switzerland",
+      "bs": 1,
+      "group": "B"
+    },
+    {
+      "date": "Jun 13",
       "a": "Brazil",
       "as": 1,
       "b": "Morocco",
       "bs": 1,
       "group": "C"
+    },
+    {
+      "date": "Jun 14",
+      "a": "Haiti",
+      "as": 0,
+      "b": "Scotland",
+      "bs": 1,
+      "group": "C"
+    },
+    {
+      "date": "Jun 14",
+      "a": "Australia",
+      "as": 2,
+      "b": "Turkey",
+      "bs": 0,
+      "group": "D"
     },
     {
       "date": "Jun 14",
@@ -559,23 +591,43 @@
       "as": 2,
       "b": "Japan",
       "bs": 2,
-      "group": "F",
-      "lastLabel": "Sweden–Tunisia"
+      "group": "F"
+    },
+    {
+      "date": "Jun 14",
+      "a": "Ivory Coast",
+      "as": 1,
+      "b": "Ecuador",
+      "bs": 0,
+      "group": "E"
+    },
+    {
+      "date": "Jun 15",
+      "a": "Sweden",
+      "as": 5,
+      "b": "Tunisia",
+      "bs": 1,
+      "group": "F"
+    },
+    {
+      "date": "Jun 15",
+      "a": "Spain",
+      "as": 0,
+      "b": "Cape Verde",
+      "bs": 0,
+      "group": "H"
+    },
+    {
+      "date": "Jun 15",
+      "a": "Belgium",
+      "as": 1,
+      "b": "Egypt",
+      "bs": 1,
+      "group": "G",
+      "lastLabel": "Belgium–Egypt"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-15T16:00:00Z",
-      "group": "H",
-      "a": "Spain",
-      "b": "Cape Verde"
-    },
-    {
-      "utc": "2026-06-15T19:00:00Z",
-      "group": "G",
-      "a": "Belgium",
-      "b": "Egypt"
-    },
     {
       "utc": "2026-06-15T22:00:00Z",
       "group": "H",
@@ -587,6 +639,42 @@
       "group": "G",
       "a": "Iran",
       "b": "New Zealand"
+    },
+    {
+      "utc": "2026-06-16T19:00:00Z",
+      "group": "I",
+      "a": "France",
+      "b": "Senegal"
+    },
+    {
+      "utc": "2026-06-16T22:00:00Z",
+      "group": "I",
+      "a": "Iraq",
+      "b": "Norway"
+    },
+    {
+      "utc": "2026-06-17T01:00:00Z",
+      "group": "J",
+      "a": "Argentina",
+      "b": "Algeria"
+    },
+    {
+      "utc": "2026-06-17T04:00:00Z",
+      "group": "J",
+      "a": "Austria",
+      "b": "Jordan"
+    },
+    {
+      "utc": "2026-06-17T17:00:00Z",
+      "group": "K",
+      "a": "Portugal",
+      "b": "DR Congo"
+    },
+    {
+      "utc": "2026-06-17T20:00:00Z",
+      "group": "L",
+      "a": "England",
+      "b": "Croatia"
     }
   ]
 }
