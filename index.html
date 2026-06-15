@@ -3,13 +3,21 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J1G20N6W3N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-J1G20N6W3N');
+</script>
 <title>World Cup 2026 — The Big Fat Kitty 🐱</title>
 <!-- WhatsApp / link preview. og.py rewrites the title, description and image daily. -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="The Big Fat Kitty 🐱 — ₹28,000 in the pot">
-<meta property="og:description" content="Leader: Luv (13.9%)  ·  Lightest: Luv  ·  Next: Saudi Arabia v Uruguay">
-<meta property="og:image" content="https://therajatsachdeva.github.io/big-fat-kitty/og.png?v=jun15">
-<meta property="og:url" content="https://therajatsachdeva.github.io/big-fat-kitty/">
+<meta property="og:title" content="The Big Fat Kitty 🐱 — ₹24,000 in the pot">
+<meta property="og:description" content="Leader: Luv (14.5%)  ·  Lightest: Inayat  ·  Next: Spain v Cape Verde">
+<meta property="og:image" content="og.png?v=jun14">
+<meta property="og:url" content="">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0B0F1E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +35,8 @@
     background:
       radial-gradient(1200px 600px at 50% -200px, rgba(244,201,93,.10), transparent 60%),
       radial-gradient(800px 500px at 100% 100%, rgba(108,140,255,.08), transparent 55%),
+      linear-gradient(180deg, rgba(11,15,30,.74), rgba(11,15,30,.86)),
+      url('bg.jpg') center top / cover fixed,
       var(--ink);
     color:var(--text); font-family:'Inter',system-ui,sans-serif; line-height:1.45;
     -webkit-font-smoothing:antialiased; padding:0 0 96px;
@@ -426,15 +436,15 @@ document.getElementById('sortToggle').addEventListener('click',e=>{
 });
 
 /* ---------- WhatsApp share ---------- */
+// ₹ amount with an invisible break so WhatsApp doesn't turn it into a tappable number
+function waMoney(n){ const s=fmt(n); return '₹'+s.slice(0,1)+'\u200B'+s.slice(1); }
 function buildSummary(){
   const order=[...PLAYERS].sort((a,b)=>win[b.name]-win[a.name]);
   const medal=['🥇','🥈','🥉'];
   const till=(DATA.meta&&DATA.meta.updatedTill)||pot.last;
   const date=(DATA.meta&&DATA.meta.updatedDate)||pot.lastDate;
-  let s=`🐱 *THE BIG FAT KITTY* — ₹${fmt(pot.total)}\n_Updated till ${till}${date?' · '+date:''}_\n\n🏆 *Standings (win %)*\n`;
-  order.forEach((p,i)=>{ s+=`${medal[i]||(i+1)+'.'} ${p.name} — ${win[p.name].toFixed(1)}%  ·  in pot ₹${fmt(pot.owed[p.name])}\n`; });
-  const light=[...PLAYERS].sort((a,b)=>pot.owed[a.name]-pot.owed[b.name])[0];
-  s+=`\n🪶 Travelling lightest: ${light.name} (₹${fmt(pot.owed[light.name])})`;
+  let s=`🐱 *THE BIG FAT KITTY* — ${waMoney(pot.total)}\n_Updated till ${till}${date?' · '+date:''}_\n\n🏆 *Standings*\n`;
+  order.forEach((p,i)=>{ s+=`${medal[i]||(i+1)+'.'} ${p.name} — ${waMoney(pot.owed[p.name])}\n`; });
   const nx=(DATA.upcoming||[])[0];
   if(nx){ const t=new Date(nx.utc).toLocaleString('en-IN',{timeZone:'Asia/Kolkata',weekday:'short',hour:'numeric',minute:'2-digit',hour12:true}); s+=`\n⚽ Next up: ${nx.a} v ${nx.b} — ${t.replace(',','')} IST`; }
   const stamp=new Date().toLocaleDateString('en-GB',{day:'numeric',month:'short'}).replace(' ','').toLowerCase();
