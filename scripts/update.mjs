@@ -15,12 +15,12 @@ if (!TOKEN) { console.error("Missing FOOTBALL_DATA_TOKEN env var."); process.exi
 /* Map football-data.org team names -> the short names used in data.json */
 const NAME_MAP = {
   "United States":"USA","USA":"USA","Korea Republic":"Korea","South Korea":"Korea",
-  "Bosnia and Herzegovina":"Bosnia","Bosnia & Herzegovina":"Bosnia","Türkiye":"Turkey","Turkey":"Turkey",
+  "Bosnia and Herzegovina":"Bosnia","Bosnia & Herzegovina":"Bosnia","Bosnia-Herzegovina":"Bosnia","Türkiye":"Turkey","Turkey":"Turkey",
   "Curaçao":"Curacao","Côte d'Ivoire":"Ivory Coast","Ivory Coast":"Ivory Coast",
-  "Cabo Verde":"Cape Verde","Cape Verde":"Cape Verde","Czech Republic":"Czechia","Czechia":"Czechia",
+  "Cabo Verde":"Cape Verde","Cape Verde":"Cape Verde","Cape Verde Islands":"Cape Verde","Czech Republic":"Czechia","Czechia":"Czechia",
   "IR Iran":"Iran","Iran":"Iran","Congo DR":"DR Congo","DR Congo":"DR Congo","Saudi Arabia":"Saudi Arabia"
 };
-const STRIP = s => s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z]/g,"");
+const STRIP = s => (s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z]/g,"");
 
 const STAGE_RANK = { GROUP:0, LAST_32:1, LAST_16:2, QUARTER_FINALS:3, SEMI_FINALS:4, THIRD_PLACE:5, FINAL:5 };
 const fmtDate = iso => new Date(iso).toLocaleDateString("en-US",{month:"short",day:"numeric",timeZone:"UTC"});
@@ -31,6 +31,7 @@ async function main(){
   const keyByStrip = Object.fromEntries(teamKeys.map(k=>[STRIP(k),k]));
 
   const resolve = name => {
+    if (!name) return null;
     if (NAME_MAP[name]) return NAME_MAP[name];
     if (data.teams[name]) return name;
     const hit = keyByStrip[STRIP(name)];
