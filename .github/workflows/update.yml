@@ -1,0 +1,55 @@
+name: Update Kitty
+
+# Runs three times a day during the tournament, plus a manual button.
+# Times are UTC. World Cup matches mostly finish overnight UTC, so we refresh
+# in the (Indian) morning, afternoon and evening to catch the latest results.
+on:
+  schedule:
+    - cron: "30 6 * * *"    # ~12:00 IST
+    - cron: "30 13 * * *"   # ~19:00 IST
+    - cron: "30 19 * * *"   # ~01:00 IST
+  workflow_dispatch:        # lets you trigger it by hand from the Actions tab
+
+permissions:
+  contents: write           # allows the action to commit the refreshed data.json
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch results and rebuild data.json
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+        run: node scripts/update.mjs
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Render WhatsApp preview card (non-blocking)
+        continue-on-error: true
+        run: |
+          python -m pip install --quiet pillow
+          python scripts/og.py
+
+      - name: Commit if anything changed
+        if: always()
+        run: |
+          git config user.name  "kitty-bot"
+          git config user.email "kitty-bot@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data.json index.html og.png)" ]; then
+            git add data.json index.html og.png
+            git commit -m "Auto-update: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          else
+            echo "No changes."
+          fi
