@@ -436,8 +436,9 @@ document.getElementById('sortToggle').addEventListener('click',e=>{
 });
 
 /* ---------- WhatsApp share ---------- */
-// ₹ amount with an invisible break so WhatsApp doesn't turn it into a tappable number
-function waMoney(n){ const s=fmt(n); return '₹'+s.slice(0,1)+'\u200B'+s.slice(1); }
+// amount for WhatsApp: no ₹ symbol (it makes WhatsApp treat it as a tappable amount),
+// plus an invisible break so the bare number isn't linkified either
+function waMoney(n){ const s=fmt(n); return s.slice(0,1)+'\u200B'+s.slice(1); }
 function buildSummary(){
   const order=[...PLAYERS].sort((a,b)=>win[b.name]-win[a.name]);
   const medal=['🥇','🥈','🥉'];
