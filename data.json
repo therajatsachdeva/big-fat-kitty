@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Iran–New Zealand",
+    "updatedTill": "France–Senegal",
     "updatedDate": "Jun 16",
-    "lastSync": "2026-06-16T18:13:27.455Z"
+    "lastSync": "2026-06-16T21:58:25.511Z"
   },
   "players": [
     {
@@ -101,8 +101,8 @@
       "code": "fr",
       "ab": "FRA",
       "strength": 48,
-      "gp": 0,
-      "pts": 0,
+      "gp": 1,
+      "pts": 3,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -434,7 +434,7 @@
       "code": "sn",
       "ab": "SEN",
       "strength": 14,
-      "gp": 0,
+      "gp": 1,
       "pts": 0,
       "stage": "GROUP",
       "eliminated": false
@@ -639,17 +639,19 @@
       "as": 2,
       "b": "New Zealand",
       "bs": 2,
-      "group": "G",
-      "lastLabel": "Iran–New Zealand"
+      "group": "G"
+    },
+    {
+      "date": "Jun 16",
+      "a": "France",
+      "as": 3,
+      "b": "Senegal",
+      "bs": 1,
+      "group": "I",
+      "lastLabel": "France–Senegal"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-16T19:00:00Z",
-      "group": "I",
-      "a": "France",
-      "b": "Senegal"
-    },
     {
       "utc": "2026-06-16T22:00:00Z",
       "group": "I",
@@ -691,6 +693,12 @@
       "group": "K",
       "a": "Uzbekistan",
       "b": "Colombia"
+    },
+    {
+      "utc": "2026-06-18T16:00:00Z",
+      "group": "A",
+      "a": "Czechia",
+      "b": "South Africa"
     }
   ]
 }
