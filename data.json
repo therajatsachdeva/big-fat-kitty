@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "France–Senegal",
-    "updatedDate": "Jun 16",
-    "lastSync": "2026-06-16T21:58:25.511Z"
+    "updatedTill": "Austria–Jordan",
+    "updatedDate": "Jun 17",
+    "lastSync": "2026-06-17T09:04:07.328Z"
   },
   "players": [
     {
@@ -173,8 +173,8 @@
       "code": "ar",
       "ab": "ARG",
       "strength": 40,
-      "gp": 0,
-      "pts": 0,
+      "gp": 1,
+      "pts": 3,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -182,8 +182,8 @@
       "code": "no",
       "ab": "NOR",
       "strength": 12,
-      "gp": 0,
-      "pts": 0,
+      "gp": 1,
+      "pts": 3,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -443,7 +443,7 @@
       "code": "iq",
       "ab": "IRQ",
       "strength": 2,
-      "gp": 0,
+      "gp": 1,
       "pts": 0,
       "stage": "GROUP",
       "eliminated": false
@@ -452,7 +452,7 @@
       "code": "dz",
       "ab": "ALG",
       "strength": 6,
-      "gp": 0,
+      "gp": 1,
       "pts": 0,
       "stage": "GROUP",
       "eliminated": false
@@ -461,8 +461,8 @@
       "code": "at",
       "ab": "AUT",
       "strength": 9,
-      "gp": 0,
-      "pts": 0,
+      "gp": 1,
+      "pts": 3,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -470,7 +470,7 @@
       "code": "jo",
       "ab": "JOR",
       "strength": 1,
-      "gp": 0,
+      "gp": 1,
       "pts": 0,
       "stage": "GROUP",
       "eliminated": false
@@ -647,29 +647,35 @@
       "as": 3,
       "b": "Senegal",
       "bs": 1,
-      "group": "I",
-      "lastLabel": "France–Senegal"
+      "group": "I"
+    },
+    {
+      "date": "Jun 16",
+      "a": "Iraq",
+      "as": 1,
+      "b": "Norway",
+      "bs": 4,
+      "group": "I"
+    },
+    {
+      "date": "Jun 17",
+      "a": "Argentina",
+      "as": 3,
+      "b": "Algeria",
+      "bs": 0,
+      "group": "J"
+    },
+    {
+      "date": "Jun 17",
+      "a": "Austria",
+      "as": 3,
+      "b": "Jordan",
+      "bs": 1,
+      "group": "J",
+      "lastLabel": "Austria–Jordan"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-16T22:00:00Z",
-      "group": "I",
-      "a": "Iraq",
-      "b": "Norway"
-    },
-    {
-      "utc": "2026-06-17T01:00:00Z",
-      "group": "J",
-      "a": "Argentina",
-      "b": "Algeria"
-    },
-    {
-      "utc": "2026-06-17T04:00:00Z",
-      "group": "J",
-      "a": "Austria",
-      "b": "Jordan"
-    },
     {
       "utc": "2026-06-17T17:00:00Z",
       "group": "K",
@@ -699,6 +705,24 @@
       "group": "A",
       "a": "Czechia",
       "b": "South Africa"
+    },
+    {
+      "utc": "2026-06-18T19:00:00Z",
+      "group": "B",
+      "a": "Switzerland",
+      "b": "Bosnia"
+    },
+    {
+      "utc": "2026-06-18T22:00:00Z",
+      "group": "B",
+      "a": "Canada",
+      "b": "Qatar"
+    },
+    {
+      "utc": "2026-06-19T01:00:00Z",
+      "group": "A",
+      "a": "Mexico",
+      "b": "Korea"
     }
   ]
 }
