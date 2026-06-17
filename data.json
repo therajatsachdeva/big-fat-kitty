@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Austria–Jordan",
+    "updatedTill": "Portugal–DR Congo",
     "updatedDate": "Jun 17",
-    "lastSync": "2026-06-17T16:34:39.397Z"
+    "lastSync": "2026-06-17T21:00:17.950Z"
   },
   "players": [
     {
@@ -191,8 +191,8 @@
       "code": "pt",
       "ab": "POR",
       "strength": 35,
-      "gp": 0,
-      "pts": 0,
+      "gp": 1,
+      "pts": 1,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -479,8 +479,8 @@
       "code": "cd",
       "ab": "COD",
       "strength": 4,
-      "gp": 0,
-      "pts": 0,
+      "gp": 1,
+      "pts": 1,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -671,17 +671,19 @@
       "as": 3,
       "b": "Jordan",
       "bs": 1,
-      "group": "J",
-      "lastLabel": "Austria–Jordan"
+      "group": "J"
+    },
+    {
+      "date": "Jun 17",
+      "a": "Portugal",
+      "as": 1,
+      "b": "DR Congo",
+      "bs": 1,
+      "group": "K",
+      "lastLabel": "Portugal–DR Congo"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-17T17:00:00Z",
-      "group": "K",
-      "a": "Portugal",
-      "b": "DR Congo"
-    },
     {
       "utc": "2026-06-17T20:00:00Z",
       "group": "L",
@@ -723,6 +725,12 @@
       "group": "A",
       "a": "Mexico",
       "b": "Korea"
+    },
+    {
+      "utc": "2026-06-19T19:00:00Z",
+      "group": "D",
+      "a": "USA",
+      "b": "Australia"
     }
   ]
 }
