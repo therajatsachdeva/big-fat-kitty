@@ -14,10 +14,10 @@
 <title>World Cup 2026 — The Big Fat Kitty 🐱</title>
 <!-- WhatsApp / link preview. og.py rewrites the title, description and image daily. -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="The Big Fat Kitty 🐱 — ₹34,000 in the pot">
-<meta property="og:description" content="Leader: Shankar (16.0%)  ·  Lightest: Shankar  ·  Next: Iraq v Norway">
-<meta property="og:image" content="https://therajatsachdeva.github.io/big-fat-kitty/og.png?v=jun16">
-<meta property="og:url" content="https://therajatsachdeva.github.io/big-fat-kitty/">
+<meta property="og:title" content="The Big Fat Kitty 🐱 — ₹24,000 in the pot">
+<meta property="og:description" content="Leader: Luv (14.5%)  ·  Lightest: Inayat  ·  Next: Spain v Cape Verde">
+<meta property="og:image" content="og.png?v=jun14">
+<meta property="og:url" content="">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0B0F1E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -444,8 +444,8 @@ function buildSummary(){
   const medal=['🥇','🥈','🥉'];
   const till=(DATA.meta&&DATA.meta.updatedTill)||pot.last;
   const date=(DATA.meta&&DATA.meta.updatedDate)||pot.lastDate;
-  let s=`🐱 *THE BIG FAT KITTY* — ${waMoney(pot.total)}\n_Updated till ${till}${date?' · '+date:''}_\n\n🏆 *Standings*\n`;
-  order.forEach((p,i)=>{ s+=`${medal[i]||(i+1)+'.'} ${p.name} — ${waMoney(pot.owed[p.name])}\n`; });
+  let s=`🐱 *THE BIG FAT KITTY* — ${waMoney(pot.total)}\n_Updated till ${till}${date?' · '+date:''}_\n\n🏆 *Standings (likelihood of winning)*\n`;
+  order.forEach((p,i)=>{ s+=`${medal[i]||(i+1)+'.'} ${p.name} — ${waMoney(pot.owed[p.name])} (${win[p.name].toFixed(1)}%)\n`; });
   const nx=(DATA.upcoming||[])[0];
   if(nx){ const t=new Date(nx.utc).toLocaleString('en-IN',{timeZone:'Asia/Kolkata',weekday:'short',hour:'numeric',minute:'2-digit',hour12:true}); s+=`\n⚽ Next up: ${nx.a} v ${nx.b} — ${t.replace(',','')} IST`; }
   const stamp=new Date().toLocaleDateString('en-GB',{day:'numeric',month:'short'}).replace(' ','').toLowerCase();
