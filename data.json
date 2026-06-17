@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Portugal–DR Congo",
+    "updatedTill": "England–Croatia",
     "updatedDate": "Jun 17",
-    "lastSync": "2026-06-17T21:00:17.950Z"
+    "lastSync": "2026-06-17T23:42:41.841Z"
   },
   "players": [
     {
@@ -146,7 +146,7 @@
       "code": "hr",
       "ab": "CRO",
       "strength": 12,
-      "gp": 0,
+      "gp": 1,
       "pts": 0,
       "stage": "GROUP",
       "eliminated": false
@@ -155,8 +155,8 @@
       "code": "gb-eng",
       "ab": "ENG",
       "strength": 42,
-      "gp": 0,
-      "pts": 0,
+      "gp": 1,
+      "pts": 3,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -679,17 +679,19 @@
       "as": 1,
       "b": "DR Congo",
       "bs": 1,
-      "group": "K",
-      "lastLabel": "Portugal–DR Congo"
+      "group": "K"
+    },
+    {
+      "date": "Jun 17",
+      "a": "England",
+      "as": 4,
+      "b": "Croatia",
+      "bs": 2,
+      "group": "L",
+      "lastLabel": "England–Croatia"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-17T20:00:00Z",
-      "group": "L",
-      "a": "England",
-      "b": "Croatia"
-    },
     {
       "utc": "2026-06-17T23:00:00Z",
       "group": "L",
@@ -731,6 +733,12 @@
       "group": "D",
       "a": "USA",
       "b": "Australia"
+    },
+    {
+      "utc": "2026-06-19T22:00:00Z",
+      "group": "C",
+      "a": "Scotland",
+      "b": "Morocco"
     }
   ]
 }
