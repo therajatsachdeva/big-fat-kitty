@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "England–Croatia",
-    "updatedDate": "Jun 17",
-    "lastSync": "2026-06-17T23:42:41.841Z"
+    "updatedTill": "Uzbekistan–Colombia",
+    "updatedDate": "Jun 18",
+    "lastSync": "2026-06-18T05:59:34.794Z"
   },
   "players": [
     {
@@ -218,8 +218,8 @@
       "code": "co",
       "ab": "COL",
       "strength": 15,
-      "gp": 0,
-      "pts": 0,
+      "gp": 1,
+      "pts": 3,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -488,7 +488,7 @@
       "code": "uz",
       "ab": "UZB",
       "strength": 3,
-      "gp": 0,
+      "gp": 1,
       "pts": 0,
       "stage": "GROUP",
       "eliminated": false
@@ -497,8 +497,8 @@
       "code": "gh",
       "ab": "GHA",
       "strength": 5,
-      "gp": 0,
-      "pts": 0,
+      "gp": 1,
+      "pts": 3,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -506,7 +506,7 @@
       "code": "pa",
       "ab": "PAN",
       "strength": 2,
-      "gp": 0,
+      "gp": 1,
       "pts": 0,
       "stage": "GROUP",
       "eliminated": false
@@ -687,23 +687,27 @@
       "as": 4,
       "b": "Croatia",
       "bs": 2,
-      "group": "L",
-      "lastLabel": "England–Croatia"
+      "group": "L"
+    },
+    {
+      "date": "Jun 17",
+      "a": "Ghana",
+      "as": 1,
+      "b": "Panama",
+      "bs": 0,
+      "group": "L"
+    },
+    {
+      "date": "Jun 18",
+      "a": "Uzbekistan",
+      "as": 1,
+      "b": "Colombia",
+      "bs": 3,
+      "group": "K",
+      "lastLabel": "Uzbekistan–Colombia"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-17T23:00:00Z",
-      "group": "L",
-      "a": "Ghana",
-      "b": "Panama"
-    },
-    {
-      "utc": "2026-06-18T02:00:00Z",
-      "group": "K",
-      "a": "Uzbekistan",
-      "b": "Colombia"
-    },
     {
       "utc": "2026-06-18T16:00:00Z",
       "group": "A",
@@ -739,6 +743,18 @@
       "group": "C",
       "a": "Scotland",
       "b": "Morocco"
+    },
+    {
+      "utc": "2026-06-20T00:30:00Z",
+      "group": "C",
+      "a": "Brazil",
+      "b": "Haiti"
+    },
+    {
+      "utc": "2026-06-20T03:00:00Z",
+      "group": "D",
+      "a": "Turkey",
+      "b": "Paraguay"
     }
   ]
 }
