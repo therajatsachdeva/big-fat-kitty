@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Uzbekistan–Colombia",
+    "updatedTill": "Switzerland–Bosnia",
     "updatedDate": "Jun 18",
-    "lastSync": "2026-06-18T16:23:40.544Z"
+    "lastSync": "2026-06-18T21:16:47.868Z"
   },
   "players": [
     {
@@ -245,8 +245,8 @@
       "code": "za",
       "ab": "RSA",
       "strength": 2,
-      "gp": 1,
-      "pts": 0,
+      "gp": 2,
+      "pts": 1,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -254,8 +254,8 @@
       "code": "cz",
       "ab": "CZE",
       "strength": 5,
-      "gp": 1,
-      "pts": 0,
+      "gp": 2,
+      "pts": 1,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -272,7 +272,7 @@
       "code": "ba",
       "ab": "BIH",
       "strength": 4,
-      "gp": 1,
+      "gp": 2,
       "pts": 1,
       "stage": "GROUP",
       "eliminated": false
@@ -290,8 +290,8 @@
       "code": "ch",
       "ab": "SUI",
       "strength": 12,
-      "gp": 1,
-      "pts": 1,
+      "gp": 2,
+      "pts": 4,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -703,23 +703,27 @@
       "as": 1,
       "b": "Colombia",
       "bs": 3,
-      "group": "K",
-      "lastLabel": "Uzbekistan–Colombia"
+      "group": "K"
+    },
+    {
+      "date": "Jun 18",
+      "a": "Czechia",
+      "as": 1,
+      "b": "South Africa",
+      "bs": 1,
+      "group": "A"
+    },
+    {
+      "date": "Jun 18",
+      "a": "Switzerland",
+      "as": 4,
+      "b": "Bosnia",
+      "bs": 1,
+      "group": "B",
+      "lastLabel": "Switzerland–Bosnia"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-18T16:00:00Z",
-      "group": "A",
-      "a": "Czechia",
-      "b": "South Africa"
-    },
-    {
-      "utc": "2026-06-18T19:00:00Z",
-      "group": "B",
-      "a": "Switzerland",
-      "b": "Bosnia"
-    },
     {
       "utc": "2026-06-18T22:00:00Z",
       "group": "B",
@@ -755,6 +759,18 @@
       "group": "D",
       "a": "Turkey",
       "b": "Paraguay"
+    },
+    {
+      "utc": "2026-06-20T17:00:00Z",
+      "group": "F",
+      "a": "Netherlands",
+      "b": "Sweden"
+    },
+    {
+      "utc": "2026-06-20T20:00:00Z",
+      "group": "E",
+      "a": "Germany",
+      "b": "Ivory Coast"
     }
   ]
 }
