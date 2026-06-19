@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Mexico–Korea",
+    "updatedTill": "USA–Australia",
     "updatedDate": "Jun 19",
-    "lastSync": "2026-06-19T20:23:53.634Z"
+    "lastSync": "2026-06-19T23:02:24.273Z"
   },
   "players": [
     {
@@ -92,8 +92,8 @@
       "code": "us",
       "ab": "USA",
       "strength": 14,
-      "gp": 1,
-      "pts": 3,
+      "gp": 2,
+      "pts": 6,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -326,7 +326,7 @@
       "code": "au",
       "ab": "AUS",
       "strength": 4,
-      "gp": 1,
+      "gp": 2,
       "pts": 3,
       "stage": "GROUP",
       "eliminated": false
@@ -735,17 +735,19 @@
       "as": 1,
       "b": "Korea",
       "bs": 0,
-      "group": "A",
-      "lastLabel": "Mexico–Korea"
+      "group": "A"
+    },
+    {
+      "date": "Jun 19",
+      "a": "USA",
+      "as": 2,
+      "b": "Australia",
+      "bs": 0,
+      "group": "D",
+      "lastLabel": "USA–Australia"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-19T19:00:00Z",
-      "group": "D",
-      "a": "USA",
-      "b": "Australia"
-    },
     {
       "utc": "2026-06-19T22:00:00Z",
       "group": "C",
@@ -787,6 +789,12 @@
       "group": "F",
       "a": "Tunisia",
       "b": "Japan"
+    },
+    {
+      "utc": "2026-06-21T16:00:00Z",
+      "group": "H",
+      "a": "Spain",
+      "b": "Saudi Arabia"
     }
   ]
 }
