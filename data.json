@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Switzerland–Bosnia",
-    "updatedDate": "Jun 18",
-    "lastSync": "2026-06-18T23:48:41.559Z"
+    "updatedTill": "Mexico–Korea",
+    "updatedDate": "Jun 19",
+    "lastSync": "2026-06-19T06:24:37.197Z"
   },
   "players": [
     {
@@ -110,8 +110,8 @@
       "code": "mx",
       "ab": "MEX",
       "strength": 11,
-      "gp": 1,
-      "pts": 3,
+      "gp": 2,
+      "pts": 6,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -128,7 +128,7 @@
       "code": "kr",
       "ab": "KOR",
       "strength": 7,
-      "gp": 1,
+      "gp": 2,
       "pts": 3,
       "stage": "GROUP",
       "eliminated": false
@@ -263,8 +263,8 @@
       "code": "ca",
       "ab": "CAN",
       "strength": 6,
-      "gp": 1,
-      "pts": 1,
+      "gp": 2,
+      "pts": 4,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -281,7 +281,7 @@
       "code": "qa",
       "ab": "QAT",
       "strength": 2,
-      "gp": 1,
+      "gp": 2,
       "pts": 1,
       "stage": "GROUP",
       "eliminated": false
@@ -719,23 +719,27 @@
       "as": 4,
       "b": "Bosnia",
       "bs": 1,
-      "group": "B",
-      "lastLabel": "Switzerland–Bosnia"
+      "group": "B"
+    },
+    {
+      "date": "Jun 18",
+      "a": "Canada",
+      "as": 6,
+      "b": "Qatar",
+      "bs": 0,
+      "group": "B"
+    },
+    {
+      "date": "Jun 19",
+      "a": "Mexico",
+      "as": 1,
+      "b": "Korea",
+      "bs": 0,
+      "group": "A",
+      "lastLabel": "Mexico–Korea"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-18T22:00:00Z",
-      "group": "B",
-      "a": "Canada",
-      "b": "Qatar"
-    },
-    {
-      "utc": "2026-06-19T01:00:00Z",
-      "group": "A",
-      "a": "Mexico",
-      "b": "Korea"
-    },
     {
       "utc": "2026-06-19T19:00:00Z",
       "group": "D",
@@ -771,6 +775,18 @@
       "group": "E",
       "a": "Germany",
       "b": "Ivory Coast"
+    },
+    {
+      "utc": "2026-06-21T00:00:00Z",
+      "group": "E",
+      "a": "Ecuador",
+      "b": "Curacao"
+    },
+    {
+      "utc": "2026-06-21T04:00:00Z",
+      "group": "F",
+      "a": "Tunisia",
+      "b": "Japan"
     }
   ]
 }
