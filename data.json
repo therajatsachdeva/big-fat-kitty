@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Turkey–Paraguay",
+    "updatedTill": "Netherlands–Sweden",
     "updatedDate": "Jun 20",
-    "lastSync": "2026-06-20T15:01:18.423Z"
+    "lastSync": "2026-06-20T20:11:47.094Z"
   },
   "players": [
     {
@@ -137,8 +137,8 @@
       "code": "nl",
       "ab": "NED",
       "strength": 23,
-      "gp": 1,
-      "pts": 1,
+      "gp": 2,
+      "pts": 4,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -371,7 +371,7 @@
       "code": "se",
       "ab": "SWE",
       "strength": 9,
-      "gp": 1,
+      "gp": 2,
       "pts": 3,
       "stage": "GROUP",
       "eliminated": false
@@ -767,17 +767,19 @@
       "as": 0,
       "b": "Paraguay",
       "bs": 1,
-      "group": "D",
-      "lastLabel": "Turkey–Paraguay"
+      "group": "D"
+    },
+    {
+      "date": "Jun 20",
+      "a": "Netherlands",
+      "as": 5,
+      "b": "Sweden",
+      "bs": 1,
+      "group": "F",
+      "lastLabel": "Netherlands–Sweden"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-20T17:00:00Z",
-      "group": "F",
-      "a": "Netherlands",
-      "b": "Sweden"
-    },
     {
       "utc": "2026-06-20T20:00:00Z",
       "group": "E",
@@ -819,6 +821,12 @@
       "group": "G",
       "a": "New Zealand",
       "b": "Egypt"
+    },
+    {
+      "utc": "2026-06-22T17:00:00Z",
+      "group": "J",
+      "a": "Argentina",
+      "b": "Austria"
     }
   ]
 }
