@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Germany–Ivory Coast",
-    "updatedDate": "Jun 20",
-    "lastSync": "2026-06-20T23:13:17.725Z"
+    "updatedTill": "Tunisia–Japan",
+    "updatedDate": "Jun 21",
+    "lastSync": "2026-06-21T06:08:04.628Z"
   },
   "players": [
     {
@@ -236,8 +236,8 @@
       "code": "jp",
       "ab": "JPN",
       "strength": 12,
-      "gp": 1,
-      "pts": 1,
+      "gp": 2,
+      "pts": 4,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -344,8 +344,8 @@
       "code": "cw",
       "ab": "CUW",
       "strength": 1,
-      "gp": 1,
-      "pts": 0,
+      "gp": 2,
+      "pts": 1,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -362,8 +362,8 @@
       "code": "ec",
       "ab": "ECU",
       "strength": 9,
-      "gp": 1,
-      "pts": 0,
+      "gp": 2,
+      "pts": 1,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -380,7 +380,7 @@
       "code": "tn",
       "ab": "TUN",
       "strength": 4,
-      "gp": 1,
+      "gp": 2,
       "pts": 0,
       "stage": "GROUP",
       "eliminated": false
@@ -783,23 +783,27 @@
       "as": 2,
       "b": "Ivory Coast",
       "bs": 1,
-      "group": "E",
-      "lastLabel": "Germany–Ivory Coast"
+      "group": "E"
+    },
+    {
+      "date": "Jun 21",
+      "a": "Ecuador",
+      "as": 0,
+      "b": "Curacao",
+      "bs": 0,
+      "group": "E"
+    },
+    {
+      "date": "Jun 21",
+      "a": "Tunisia",
+      "as": 0,
+      "b": "Japan",
+      "bs": 4,
+      "group": "F",
+      "lastLabel": "Tunisia–Japan"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-21T00:00:00Z",
-      "group": "E",
-      "a": "Ecuador",
-      "b": "Curacao"
-    },
-    {
-      "utc": "2026-06-21T04:00:00Z",
-      "group": "F",
-      "a": "Tunisia",
-      "b": "Japan"
-    },
     {
       "utc": "2026-06-21T16:00:00Z",
       "group": "H",
@@ -835,6 +839,18 @@
       "group": "I",
       "a": "France",
       "b": "Iraq"
+    },
+    {
+      "utc": "2026-06-23T00:00:00Z",
+      "group": "I",
+      "a": "Norway",
+      "b": "Senegal"
+    },
+    {
+      "utc": "2026-06-23T03:00:00Z",
+      "group": "J",
+      "a": "Jordan",
+      "b": "Algeria"
     }
   ]
 }
