@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Spain–Saudi Arabia",
+    "updatedTill": "Belgium–Iran",
     "updatedDate": "Jun 21",
-    "lastSync": "2026-06-21T20:20:47.562Z"
+    "lastSync": "2026-06-21T23:19:56.403Z"
   },
   "players": [
     {
@@ -227,8 +227,8 @@
       "code": "be",
       "ab": "BEL",
       "strength": 18,
-      "gp": 1,
-      "pts": 1,
+      "gp": 2,
+      "pts": 2,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -398,8 +398,8 @@
       "code": "ir",
       "ab": "IRN",
       "strength": 6,
-      "gp": 1,
-      "pts": 1,
+      "gp": 2,
+      "pts": 2,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -804,20 +804,22 @@
     {
       "date": "Jun 21",
       "a": "Spain",
-      "as": 5,
+      "as": 4,
       "b": "Saudi Arabia",
       "bs": 0,
-      "group": "H",
-      "lastLabel": "Spain–Saudi Arabia"
+      "group": "H"
+    },
+    {
+      "date": "Jun 21",
+      "a": "Belgium",
+      "as": 0,
+      "b": "Iran",
+      "bs": 0,
+      "group": "G",
+      "lastLabel": "Belgium–Iran"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-21T19:00:00Z",
-      "group": "G",
-      "a": "Belgium",
-      "b": "Iran"
-    },
     {
       "utc": "2026-06-21T22:00:00Z",
       "group": "H",
@@ -859,6 +861,12 @@
       "group": "K",
       "a": "Portugal",
       "b": "Uzbekistan"
+    },
+    {
+      "utc": "2026-06-23T20:00:00Z",
+      "group": "L",
+      "a": "England",
+      "b": "Ghana"
     }
   ]
 }
