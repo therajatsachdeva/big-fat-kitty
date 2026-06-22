@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "New Zealand–Egypt",
+    "updatedTill": "Argentina–Austria",
     "updatedDate": "Jun 22",
-    "lastSync": "2026-06-22T17:27:07.873Z"
+    "lastSync": "2026-06-22T21:28:10.247Z"
   },
   "players": [
     {
@@ -173,8 +173,8 @@
       "code": "ar",
       "ab": "ARG",
       "strength": 40,
-      "gp": 1,
-      "pts": 3,
+      "gp": 2,
+      "pts": 6,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -461,7 +461,7 @@
       "code": "at",
       "ab": "AUT",
       "strength": 9,
-      "gp": 1,
+      "gp": 2,
       "pts": 3,
       "stage": "GROUP",
       "eliminated": false
@@ -831,17 +831,19 @@
       "as": 1,
       "b": "Egypt",
       "bs": 3,
-      "group": "G",
-      "lastLabel": "New Zealand–Egypt"
+      "group": "G"
+    },
+    {
+      "date": "Jun 22",
+      "a": "Argentina",
+      "as": 2,
+      "b": "Austria",
+      "bs": 0,
+      "group": "J",
+      "lastLabel": "Argentina–Austria"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-22T17:00:00Z",
-      "group": "J",
-      "a": "Argentina",
-      "b": "Austria"
-    },
     {
       "utc": "2026-06-22T21:00:00Z",
       "group": "I",
@@ -883,6 +885,12 @@
       "group": "K",
       "a": "Colombia",
       "b": "DR Congo"
+    },
+    {
+      "utc": "2026-06-24T19:00:00Z",
+      "group": "B",
+      "a": "Switzerland",
+      "b": "Canada"
     }
   ]
 }
