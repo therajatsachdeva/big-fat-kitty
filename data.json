@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Belgium–Iran",
-    "updatedDate": "Jun 21",
-    "lastSync": "2026-06-21T23:19:56.403Z"
+    "updatedTill": "New Zealand–Egypt",
+    "updatedDate": "Jun 22",
+    "lastSync": "2026-06-22T06:33:18.019Z"
   },
   "players": [
     {
@@ -164,8 +164,8 @@
       "code": "uy",
       "ab": "URU",
       "strength": 16,
-      "gp": 1,
-      "pts": 1,
+      "gp": 2,
+      "pts": 2,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -389,8 +389,8 @@
       "code": "eg",
       "ab": "EGY",
       "strength": 6,
-      "gp": 1,
-      "pts": 1,
+      "gp": 2,
+      "pts": 4,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -407,7 +407,7 @@
       "code": "nz",
       "ab": "NZL",
       "strength": 2,
-      "gp": 1,
+      "gp": 2,
       "pts": 1,
       "stage": "GROUP",
       "eliminated": false
@@ -416,8 +416,8 @@
       "code": "cv",
       "ab": "CPV",
       "strength": 1,
-      "gp": 1,
-      "pts": 1,
+      "gp": 2,
+      "pts": 2,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -815,23 +815,27 @@
       "as": 0,
       "b": "Iran",
       "bs": 0,
+      "group": "G"
+    },
+    {
+      "date": "Jun 21",
+      "a": "Uruguay",
+      "as": 2,
+      "b": "Cape Verde",
+      "bs": 2,
+      "group": "H"
+    },
+    {
+      "date": "Jun 22",
+      "a": "New Zealand",
+      "as": 1,
+      "b": "Egypt",
+      "bs": 3,
       "group": "G",
-      "lastLabel": "Belgium–Iran"
+      "lastLabel": "New Zealand–Egypt"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-21T22:00:00Z",
-      "group": "H",
-      "a": "Uruguay",
-      "b": "Cape Verde"
-    },
-    {
-      "utc": "2026-06-22T01:00:00Z",
-      "group": "G",
-      "a": "New Zealand",
-      "b": "Egypt"
-    },
     {
       "utc": "2026-06-22T17:00:00Z",
       "group": "J",
@@ -867,6 +871,18 @@
       "group": "L",
       "a": "England",
       "b": "Ghana"
+    },
+    {
+      "utc": "2026-06-23T23:00:00Z",
+      "group": "L",
+      "a": "Panama",
+      "b": "Croatia"
+    },
+    {
+      "utc": "2026-06-24T02:00:00Z",
+      "group": "K",
+      "a": "Colombia",
+      "b": "DR Congo"
     }
   ]
 }
