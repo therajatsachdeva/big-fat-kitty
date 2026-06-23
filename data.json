@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Jordan–Algeria",
+    "updatedTill": "Portugal–Uzbekistan",
     "updatedDate": "Jun 23",
-    "lastSync": "2026-06-23T15:44:36.448Z"
+    "lastSync": "2026-06-23T20:58:27.407Z"
   },
   "players": [
     {
@@ -191,8 +191,8 @@
       "code": "pt",
       "ab": "POR",
       "strength": 35,
-      "gp": 1,
-      "pts": 1,
+      "gp": 2,
+      "pts": 4,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -488,7 +488,7 @@
       "code": "uz",
       "ab": "UZB",
       "strength": 3,
-      "gp": 1,
+      "gp": 2,
       "pts": 0,
       "stage": "GROUP",
       "eliminated": false
@@ -863,17 +863,19 @@
       "as": 1,
       "b": "Algeria",
       "bs": 2,
-      "group": "J",
-      "lastLabel": "Jordan–Algeria"
+      "group": "J"
+    },
+    {
+      "date": "Jun 23",
+      "a": "Portugal",
+      "as": 5,
+      "b": "Uzbekistan",
+      "bs": 0,
+      "group": "K",
+      "lastLabel": "Portugal–Uzbekistan"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-23T17:00:00Z",
-      "group": "K",
-      "a": "Portugal",
-      "b": "Uzbekistan"
-    },
     {
       "utc": "2026-06-23T20:00:00Z",
       "group": "L",
@@ -915,6 +917,12 @@
       "group": "C",
       "a": "Scotland",
       "b": "Brazil"
+    },
+    {
+      "utc": "2026-06-25T01:00:00Z",
+      "group": "A",
+      "a": "Czechia",
+      "b": "Mexico"
     }
   ]
 }
