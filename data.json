@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Portugal–Uzbekistan",
+    "updatedTill": "England–Ghana",
     "updatedDate": "Jun 23",
-    "lastSync": "2026-06-23T20:58:27.407Z"
+    "lastSync": "2026-06-23T23:11:25.137Z"
   },
   "players": [
     {
@@ -155,8 +155,8 @@
       "code": "gb-eng",
       "ab": "ENG",
       "strength": 42,
-      "gp": 1,
-      "pts": 3,
+      "gp": 2,
+      "pts": 4,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -497,8 +497,8 @@
       "code": "gh",
       "ab": "GHA",
       "strength": 5,
-      "gp": 1,
-      "pts": 3,
+      "gp": 2,
+      "pts": 4,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -871,17 +871,19 @@
       "as": 5,
       "b": "Uzbekistan",
       "bs": 0,
-      "group": "K",
-      "lastLabel": "Portugal–Uzbekistan"
+      "group": "K"
+    },
+    {
+      "date": "Jun 23",
+      "a": "England",
+      "as": 0,
+      "b": "Ghana",
+      "bs": 0,
+      "group": "L",
+      "lastLabel": "England–Ghana"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-23T20:00:00Z",
-      "group": "L",
-      "a": "England",
-      "b": "Ghana"
-    },
     {
       "utc": "2026-06-23T23:00:00Z",
       "group": "L",
@@ -923,6 +925,12 @@
       "group": "A",
       "a": "Czechia",
       "b": "Mexico"
+    },
+    {
+      "utc": "2026-06-25T01:00:00Z",
+      "group": "A",
+      "a": "South Africa",
+      "b": "Korea"
     }
   ]
 }
