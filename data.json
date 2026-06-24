@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Colombia–DR Congo",
+    "updatedTill": "Bosnia–Qatar",
     "updatedDate": "Jun 24",
-    "lastSync": "2026-06-24T20:28:18.837Z"
+    "lastSync": "2026-06-24T23:08:34.791Z"
   },
   "players": [
     {
@@ -263,7 +263,7 @@
       "code": "ca",
       "ab": "CAN",
       "strength": 6,
-      "gp": 2,
+      "gp": 3,
       "pts": 4,
       "stage": "GROUP",
       "eliminated": false
@@ -272,8 +272,8 @@
       "code": "ba",
       "ab": "BIH",
       "strength": 4,
-      "gp": 2,
-      "pts": 1,
+      "gp": 3,
+      "pts": 4,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -281,7 +281,7 @@
       "code": "qa",
       "ab": "QAT",
       "strength": 2,
-      "gp": 2,
+      "gp": 3,
       "pts": 1,
       "stage": "GROUP",
       "eliminated": false
@@ -290,8 +290,8 @@
       "code": "ch",
       "ab": "SUI",
       "strength": 12,
-      "gp": 2,
-      "pts": 4,
+      "gp": 3,
+      "pts": 7,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -895,23 +895,27 @@
       "as": 1,
       "b": "DR Congo",
       "bs": 0,
-      "group": "K",
-      "lastLabel": "Colombia–DR Congo"
+      "group": "K"
+    },
+    {
+      "date": "Jun 24",
+      "a": "Switzerland",
+      "as": 2,
+      "b": "Canada",
+      "bs": 1,
+      "group": "B"
+    },
+    {
+      "date": "Jun 24",
+      "a": "Bosnia",
+      "as": 3,
+      "b": "Qatar",
+      "bs": 1,
+      "group": "B",
+      "lastLabel": "Bosnia–Qatar"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-24T19:00:00Z",
-      "group": "B",
-      "a": "Switzerland",
-      "b": "Canada"
-    },
-    {
-      "utc": "2026-06-24T19:00:00Z",
-      "group": "B",
-      "a": "Bosnia",
-      "b": "Qatar"
-    },
     {
       "utc": "2026-06-24T22:00:00Z",
       "group": "C",
@@ -947,6 +951,18 @@
       "group": "E",
       "a": "Curacao",
       "b": "Ivory Coast"
+    },
+    {
+      "utc": "2026-06-25T23:00:00Z",
+      "group": "F",
+      "a": "Tunisia",
+      "b": "Netherlands"
+    },
+    {
+      "utc": "2026-06-25T23:00:00Z",
+      "group": "F",
+      "a": "Japan",
+      "b": "Sweden"
     }
   ]
 }
