@@ -2,7 +2,7 @@
   "meta": {
     "updatedTill": "Colombia–DR Congo",
     "updatedDate": "Jun 24",
-    "lastSync": "2026-06-24T07:58:47.310Z"
+    "lastSync": "2026-06-24T10:51:09.872Z"
   },
   "players": [
     {
@@ -532,9 +532,9 @@
     {
       "date": "Jun 12",
       "a": "Canada",
-      "as": null,
+      "as": 1,
       "b": "Bosnia",
-      "bs": null,
+      "bs": 1,
       "group": "B"
     },
     {
