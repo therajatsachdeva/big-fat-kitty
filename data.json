@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "South Africa–Korea",
+    "updatedTill": "Curacao–Ivory Coast",
     "updatedDate": "Jun 25",
-    "lastSync": "2026-06-25T20:52:29.541Z"
+    "lastSync": "2026-06-25T23:22:18.534Z"
   },
   "players": [
     {
@@ -209,7 +209,7 @@
       "code": "de",
       "ab": "GER",
       "strength": 32,
-      "gp": 2,
+      "gp": 3,
       "pts": 6,
       "stage": "GROUP",
       "eliminated": false
@@ -344,7 +344,7 @@
       "code": "cw",
       "ab": "CUW",
       "strength": 1,
-      "gp": 2,
+      "gp": 3,
       "pts": 1,
       "stage": "GROUP",
       "eliminated": false
@@ -353,8 +353,8 @@
       "code": "ci",
       "ab": "CIV",
       "strength": 8,
-      "gp": 2,
-      "pts": 3,
+      "gp": 3,
+      "pts": 6,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -362,8 +362,8 @@
       "code": "ec",
       "ab": "ECU",
       "strength": 9,
-      "gp": 2,
-      "pts": 1,
+      "gp": 3,
+      "pts": 4,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -943,23 +943,27 @@
       "as": 1,
       "b": "Korea",
       "bs": 0,
-      "group": "A",
-      "lastLabel": "South Africa–Korea"
+      "group": "A"
+    },
+    {
+      "date": "Jun 25",
+      "a": "Ecuador",
+      "as": 2,
+      "b": "Germany",
+      "bs": 1,
+      "group": "E"
+    },
+    {
+      "date": "Jun 25",
+      "a": "Curacao",
+      "as": 0,
+      "b": "Ivory Coast",
+      "bs": 2,
+      "group": "E",
+      "lastLabel": "Curacao–Ivory Coast"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-25T20:00:00Z",
-      "group": "E",
-      "a": "Ecuador",
-      "b": "Germany"
-    },
-    {
-      "utc": "2026-06-25T20:00:00Z",
-      "group": "E",
-      "a": "Curacao",
-      "b": "Ivory Coast"
-    },
     {
       "utc": "2026-06-25T23:00:00Z",
       "group": "F",
@@ -995,6 +999,18 @@
       "group": "I",
       "a": "Senegal",
       "b": "Iraq"
+    },
+    {
+      "utc": "2026-06-27T00:00:00Z",
+      "group": "H",
+      "a": "Uruguay",
+      "b": "Spain"
+    },
+    {
+      "utc": "2026-06-27T00:00:00Z",
+      "group": "H",
+      "a": "Cape Verde",
+      "b": "Saudi Arabia"
     }
   ]
 }
