@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Bosnia–Qatar",
-    "updatedDate": "Jun 24",
-    "lastSync": "2026-06-24T23:08:34.791Z"
+    "updatedTill": "South Africa–Korea",
+    "updatedDate": "Jun 25",
+    "lastSync": "2026-06-25T05:09:10.009Z"
   },
   "players": [
     {
@@ -110,8 +110,8 @@
       "code": "mx",
       "ab": "MEX",
       "strength": 11,
-      "gp": 2,
-      "pts": 6,
+      "gp": 3,
+      "pts": 9,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -119,8 +119,8 @@
       "code": "br",
       "ab": "BRA",
       "strength": 36,
-      "gp": 2,
-      "pts": 4,
+      "gp": 3,
+      "pts": 7,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -128,7 +128,7 @@
       "code": "kr",
       "ab": "KOR",
       "strength": 7,
-      "gp": 2,
+      "gp": 3,
       "pts": 3,
       "stage": "GROUP",
       "eliminated": false
@@ -200,8 +200,8 @@
       "code": "ma",
       "ab": "MAR",
       "strength": 19,
-      "gp": 2,
-      "pts": 4,
+      "gp": 3,
+      "pts": 7,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -245,8 +245,8 @@
       "code": "za",
       "ab": "RSA",
       "strength": 2,
-      "gp": 2,
-      "pts": 1,
+      "gp": 3,
+      "pts": 4,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -254,7 +254,7 @@
       "code": "cz",
       "ab": "CZE",
       "strength": 5,
-      "gp": 2,
+      "gp": 3,
       "pts": 1,
       "stage": "GROUP",
       "eliminated": false
@@ -299,7 +299,7 @@
       "code": "ht",
       "ab": "HAI",
       "strength": 1,
-      "gp": 2,
+      "gp": 3,
       "pts": 0,
       "stage": "GROUP",
       "eliminated": false
@@ -308,7 +308,7 @@
       "code": "gb-sct",
       "ab": "SCO",
       "strength": 5,
-      "gp": 2,
+      "gp": 3,
       "pts": 3,
       "stage": "GROUP",
       "eliminated": false
@@ -911,35 +911,43 @@
       "as": 3,
       "b": "Qatar",
       "bs": 1,
-      "group": "B",
-      "lastLabel": "Bosnia–Qatar"
+      "group": "B"
+    },
+    {
+      "date": "Jun 24",
+      "a": "Morocco",
+      "as": 4,
+      "b": "Haiti",
+      "bs": 2,
+      "group": "C"
+    },
+    {
+      "date": "Jun 24",
+      "a": "Scotland",
+      "as": 0,
+      "b": "Brazil",
+      "bs": 3,
+      "group": "C"
+    },
+    {
+      "date": "Jun 25",
+      "a": "Czechia",
+      "as": 0,
+      "b": "Mexico",
+      "bs": 3,
+      "group": "A"
+    },
+    {
+      "date": "Jun 25",
+      "a": "South Africa",
+      "as": 1,
+      "b": "Korea",
+      "bs": 0,
+      "group": "A",
+      "lastLabel": "South Africa–Korea"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-24T22:00:00Z",
-      "group": "C",
-      "a": "Morocco",
-      "b": "Haiti"
-    },
-    {
-      "utc": "2026-06-24T22:00:00Z",
-      "group": "C",
-      "a": "Scotland",
-      "b": "Brazil"
-    },
-    {
-      "utc": "2026-06-25T01:00:00Z",
-      "group": "A",
-      "a": "Czechia",
-      "b": "Mexico"
-    },
-    {
-      "utc": "2026-06-25T01:00:00Z",
-      "group": "A",
-      "a": "South Africa",
-      "b": "Korea"
-    },
     {
       "utc": "2026-06-25T20:00:00Z",
       "group": "E",
@@ -963,6 +971,30 @@
       "group": "F",
       "a": "Japan",
       "b": "Sweden"
+    },
+    {
+      "utc": "2026-06-26T02:00:00Z",
+      "group": "D",
+      "a": "Turkey",
+      "b": "USA"
+    },
+    {
+      "utc": "2026-06-26T02:00:00Z",
+      "group": "D",
+      "a": "Paraguay",
+      "b": "Australia"
+    },
+    {
+      "utc": "2026-06-26T19:00:00Z",
+      "group": "I",
+      "a": "Norway",
+      "b": "France"
+    },
+    {
+      "utc": "2026-06-26T19:00:00Z",
+      "group": "I",
+      "a": "Senegal",
+      "b": "Iraq"
     }
   ]
 }
