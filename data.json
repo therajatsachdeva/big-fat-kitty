@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Curacao–Ivory Coast",
-    "updatedDate": "Jun 25",
-    "lastSync": "2026-06-25T23:22:18.534Z"
+    "updatedTill": "Paraguay–Australia",
+    "updatedDate": "Jun 26",
+    "lastSync": "2026-06-26T05:13:28.468Z"
   },
   "players": [
     {
@@ -92,7 +92,7 @@
       "code": "us",
       "ab": "USA",
       "strength": 14,
-      "gp": 2,
+      "gp": 3,
       "pts": 6,
       "stage": "GROUP",
       "eliminated": false
@@ -137,8 +137,8 @@
       "code": "nl",
       "ab": "NED",
       "strength": 23,
-      "gp": 2,
-      "pts": 4,
+      "gp": 3,
+      "pts": 7,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -236,8 +236,8 @@
       "code": "jp",
       "ab": "JPN",
       "strength": 12,
-      "gp": 2,
-      "pts": 4,
+      "gp": 3,
+      "pts": 5,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -317,8 +317,8 @@
       "code": "py",
       "ab": "PAR",
       "strength": 4,
-      "gp": 2,
-      "pts": 3,
+      "gp": 3,
+      "pts": 4,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -326,8 +326,8 @@
       "code": "au",
       "ab": "AUS",
       "strength": 4,
-      "gp": 2,
-      "pts": 3,
+      "gp": 3,
+      "pts": 4,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -335,8 +335,8 @@
       "code": "tr",
       "ab": "TUR",
       "strength": 10,
-      "gp": 2,
-      "pts": 0,
+      "gp": 3,
+      "pts": 3,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -371,8 +371,8 @@
       "code": "se",
       "ab": "SWE",
       "strength": 9,
-      "gp": 2,
-      "pts": 3,
+      "gp": 3,
+      "pts": 4,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -380,7 +380,7 @@
       "code": "tn",
       "ab": "TUN",
       "strength": 4,
-      "gp": 2,
+      "gp": 3,
       "pts": 0,
       "stage": "GROUP",
       "eliminated": false
@@ -959,35 +959,43 @@
       "as": 0,
       "b": "Ivory Coast",
       "bs": 2,
-      "group": "E",
-      "lastLabel": "Curacao–Ivory Coast"
+      "group": "E"
+    },
+    {
+      "date": "Jun 25",
+      "a": "Tunisia",
+      "as": 1,
+      "b": "Netherlands",
+      "bs": 3,
+      "group": "F"
+    },
+    {
+      "date": "Jun 25",
+      "a": "Japan",
+      "as": 1,
+      "b": "Sweden",
+      "bs": 1,
+      "group": "F"
+    },
+    {
+      "date": "Jun 26",
+      "a": "Turkey",
+      "as": 3,
+      "b": "USA",
+      "bs": 2,
+      "group": "D"
+    },
+    {
+      "date": "Jun 26",
+      "a": "Paraguay",
+      "as": 0,
+      "b": "Australia",
+      "bs": 0,
+      "group": "D",
+      "lastLabel": "Paraguay–Australia"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-25T23:00:00Z",
-      "group": "F",
-      "a": "Tunisia",
-      "b": "Netherlands"
-    },
-    {
-      "utc": "2026-06-25T23:00:00Z",
-      "group": "F",
-      "a": "Japan",
-      "b": "Sweden"
-    },
-    {
-      "utc": "2026-06-26T02:00:00Z",
-      "group": "D",
-      "a": "Turkey",
-      "b": "USA"
-    },
-    {
-      "utc": "2026-06-26T02:00:00Z",
-      "group": "D",
-      "a": "Paraguay",
-      "b": "Australia"
-    },
     {
       "utc": "2026-06-26T19:00:00Z",
       "group": "I",
@@ -1011,6 +1019,30 @@
       "group": "H",
       "a": "Cape Verde",
       "b": "Saudi Arabia"
+    },
+    {
+      "utc": "2026-06-27T03:00:00Z",
+      "group": "G",
+      "a": "New Zealand",
+      "b": "Belgium"
+    },
+    {
+      "utc": "2026-06-27T03:00:00Z",
+      "group": "G",
+      "a": "Egypt",
+      "b": "Iran"
+    },
+    {
+      "utc": "2026-06-27T21:00:00Z",
+      "group": "L",
+      "a": "Panama",
+      "b": "England"
+    },
+    {
+      "utc": "2026-06-27T21:00:00Z",
+      "group": "L",
+      "a": "Croatia",
+      "b": "Ghana"
     }
   ]
 }
