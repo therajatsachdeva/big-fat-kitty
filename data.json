@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Paraguay–Australia",
+    "updatedTill": "Senegal–Iraq",
     "updatedDate": "Jun 26",
-    "lastSync": "2026-06-26T20:27:31.004Z"
+    "lastSync": "2026-06-26T23:11:55.281Z"
   },
   "players": [
     {
@@ -101,8 +101,8 @@
       "code": "fr",
       "ab": "FRA",
       "strength": 48,
-      "gp": 2,
-      "pts": 6,
+      "gp": 3,
+      "pts": 9,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -110,8 +110,8 @@
       "code": "mx",
       "ab": "MEX",
       "strength": 11,
-      "gp": 2,
-      "pts": 6,
+      "gp": 3,
+      "pts": 9,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -128,7 +128,7 @@
       "code": "kr",
       "ab": "KOR",
       "strength": 7,
-      "gp": 2,
+      "gp": 3,
       "pts": 3,
       "stage": "GROUP",
       "eliminated": false
@@ -137,8 +137,8 @@
       "code": "nl",
       "ab": "NED",
       "strength": 23,
-      "gp": 2,
-      "pts": 4,
+      "gp": 3,
+      "pts": 7,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -182,7 +182,7 @@
       "code": "no",
       "ab": "NOR",
       "strength": 12,
-      "gp": 2,
+      "gp": 3,
       "pts": 6,
       "stage": "GROUP",
       "eliminated": false
@@ -209,7 +209,7 @@
       "code": "de",
       "ab": "GER",
       "strength": 32,
-      "gp": 2,
+      "gp": 3,
       "pts": 6,
       "stage": "GROUP",
       "eliminated": false
@@ -236,8 +236,8 @@
       "code": "jp",
       "ab": "JPN",
       "strength": 12,
-      "gp": 2,
-      "pts": 4,
+      "gp": 3,
+      "pts": 5,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -245,8 +245,8 @@
       "code": "za",
       "ab": "RSA",
       "strength": 2,
-      "gp": 2,
-      "pts": 1,
+      "gp": 3,
+      "pts": 4,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -254,7 +254,7 @@
       "code": "cz",
       "ab": "CZE",
       "strength": 5,
-      "gp": 2,
+      "gp": 3,
       "pts": 1,
       "stage": "GROUP",
       "eliminated": false
@@ -344,7 +344,7 @@
       "code": "cw",
       "ab": "CUW",
       "strength": 1,
-      "gp": 2,
+      "gp": 3,
       "pts": 1,
       "stage": "GROUP",
       "eliminated": false
@@ -353,8 +353,8 @@
       "code": "ci",
       "ab": "CIV",
       "strength": 8,
-      "gp": 2,
-      "pts": 3,
+      "gp": 3,
+      "pts": 6,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -362,8 +362,8 @@
       "code": "ec",
       "ab": "ECU",
       "strength": 9,
-      "gp": 2,
-      "pts": 1,
+      "gp": 3,
+      "pts": 4,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -371,8 +371,8 @@
       "code": "se",
       "ab": "SWE",
       "strength": 9,
-      "gp": 2,
-      "pts": 3,
+      "gp": 3,
+      "pts": 4,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -380,7 +380,7 @@
       "code": "tn",
       "ab": "TUN",
       "strength": 4,
-      "gp": 2,
+      "gp": 3,
       "pts": 0,
       "stage": "GROUP",
       "eliminated": false
@@ -434,8 +434,8 @@
       "code": "sn",
       "ab": "SEN",
       "strength": 14,
-      "gp": 2,
-      "pts": 0,
+      "gp": 3,
+      "pts": 3,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -443,7 +443,7 @@
       "code": "iq",
       "ab": "IRQ",
       "strength": 2,
-      "gp": 2,
+      "gp": 3,
       "pts": 0,
       "stage": "GROUP",
       "eliminated": false
@@ -930,6 +930,54 @@
       "group": "C"
     },
     {
+      "date": "Jun 25",
+      "a": "Czechia",
+      "as": 0,
+      "b": "Mexico",
+      "bs": 3,
+      "group": "A"
+    },
+    {
+      "date": "Jun 25",
+      "a": "South Africa",
+      "as": 1,
+      "b": "Korea",
+      "bs": 0,
+      "group": "A"
+    },
+    {
+      "date": "Jun 25",
+      "a": "Ecuador",
+      "as": 2,
+      "b": "Germany",
+      "bs": 1,
+      "group": "E"
+    },
+    {
+      "date": "Jun 25",
+      "a": "Curacao",
+      "as": 0,
+      "b": "Ivory Coast",
+      "bs": 2,
+      "group": "E"
+    },
+    {
+      "date": "Jun 25",
+      "a": "Tunisia",
+      "as": 1,
+      "b": "Netherlands",
+      "bs": 3,
+      "group": "F"
+    },
+    {
+      "date": "Jun 25",
+      "a": "Japan",
+      "as": 1,
+      "b": "Sweden",
+      "bs": 1,
+      "group": "F"
+    },
+    {
       "date": "Jun 26",
       "a": "Turkey",
       "as": 3,
@@ -943,58 +991,74 @@
       "as": 0,
       "b": "Australia",
       "bs": 0,
-      "group": "D",
-      "lastLabel": "Paraguay–Australia"
+      "group": "D"
+    },
+    {
+      "date": "Jun 26",
+      "a": "Norway",
+      "as": 1,
+      "b": "France",
+      "bs": 4,
+      "group": "I"
+    },
+    {
+      "date": "Jun 26",
+      "a": "Senegal",
+      "as": 5,
+      "b": "Iraq",
+      "bs": 0,
+      "group": "I",
+      "lastLabel": "Senegal–Iraq"
     }
   ],
   "upcoming": [
     {
-      "utc": "2026-06-25T01:00:00Z",
-      "group": "A",
-      "a": "Czechia",
-      "b": "Mexico"
+      "utc": "2026-06-27T00:00:00Z",
+      "group": "H",
+      "a": "Uruguay",
+      "b": "Spain"
     },
     {
-      "utc": "2026-06-25T01:00:00Z",
-      "group": "A",
-      "a": "South Africa",
-      "b": "Korea"
+      "utc": "2026-06-27T00:00:00Z",
+      "group": "H",
+      "a": "Cape Verde",
+      "b": "Saudi Arabia"
     },
     {
-      "utc": "2026-06-25T20:00:00Z",
-      "group": "E",
-      "a": "Ecuador",
-      "b": "Germany"
+      "utc": "2026-06-27T03:00:00Z",
+      "group": "G",
+      "a": "New Zealand",
+      "b": "Belgium"
     },
     {
-      "utc": "2026-06-25T20:00:00Z",
-      "group": "E",
-      "a": "Curacao",
-      "b": "Ivory Coast"
+      "utc": "2026-06-27T03:00:00Z",
+      "group": "G",
+      "a": "Egypt",
+      "b": "Iran"
     },
     {
-      "utc": "2026-06-25T23:00:00Z",
-      "group": "F",
-      "a": "Tunisia",
-      "b": "Netherlands"
+      "utc": "2026-06-27T21:00:00Z",
+      "group": "L",
+      "a": "Panama",
+      "b": "England"
     },
     {
-      "utc": "2026-06-25T23:00:00Z",
-      "group": "F",
-      "a": "Japan",
-      "b": "Sweden"
+      "utc": "2026-06-27T21:00:00Z",
+      "group": "L",
+      "a": "Croatia",
+      "b": "Ghana"
     },
     {
-      "utc": "2026-06-26T19:00:00Z",
-      "group": "I",
-      "a": "Norway",
-      "b": "France"
+      "utc": "2026-06-27T23:30:00Z",
+      "group": "K",
+      "a": "Colombia",
+      "b": "Portugal"
     },
     {
-      "utc": "2026-06-26T19:00:00Z",
-      "group": "I",
-      "a": "Senegal",
-      "b": "Iraq"
+      "utc": "2026-06-27T23:30:00Z",
+      "group": "K",
+      "a": "DR Congo",
+      "b": "Uzbekistan"
     }
   ]
 }
