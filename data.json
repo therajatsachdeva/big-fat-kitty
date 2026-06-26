@@ -2,7 +2,7 @@
   "meta": {
     "updatedTill": "Paraguay–Australia",
     "updatedDate": "Jun 26",
-    "lastSync": "2026-06-26T05:13:28.468Z"
+    "lastSync": "2026-06-26T08:06:30.618Z"
   },
   "players": [
     {
@@ -94,7 +94,7 @@
       "strength": 14,
       "gp": 3,
       "pts": 6,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "France": {
@@ -113,7 +113,7 @@
       "gp": 3,
       "pts": 9,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Brazil": {
       "code": "br",
@@ -121,7 +121,7 @@
       "strength": 36,
       "gp": 3,
       "pts": 7,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Korea": {
@@ -131,7 +131,7 @@
       "gp": 3,
       "pts": 3,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Netherlands": {
       "code": "nl",
@@ -139,7 +139,7 @@
       "strength": 23,
       "gp": 3,
       "pts": 7,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Croatia": {
@@ -202,7 +202,7 @@
       "strength": 19,
       "gp": 3,
       "pts": 7,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Germany": {
@@ -212,7 +212,7 @@
       "gp": 3,
       "pts": 6,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Colombia": {
       "code": "co",
@@ -238,7 +238,7 @@
       "strength": 12,
       "gp": 3,
       "pts": 5,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "South Africa": {
@@ -247,7 +247,7 @@
       "strength": 2,
       "gp": 3,
       "pts": 4,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Czechia": {
@@ -257,7 +257,7 @@
       "gp": 3,
       "pts": 1,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Canada": {
       "code": "ca",
@@ -265,7 +265,7 @@
       "strength": 6,
       "gp": 3,
       "pts": 4,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Bosnia": {
@@ -274,7 +274,7 @@
       "strength": 4,
       "gp": 3,
       "pts": 4,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Qatar": {
@@ -284,7 +284,7 @@
       "gp": 3,
       "pts": 1,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Switzerland": {
       "code": "ch",
@@ -293,7 +293,7 @@
       "gp": 3,
       "pts": 7,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Haiti": {
       "code": "ht",
@@ -302,7 +302,7 @@
       "gp": 3,
       "pts": 0,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Scotland": {
       "code": "gb-sct",
@@ -311,7 +311,7 @@
       "gp": 3,
       "pts": 3,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Paraguay": {
       "code": "py",
@@ -320,7 +320,7 @@
       "gp": 3,
       "pts": 4,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Australia": {
       "code": "au",
@@ -329,7 +329,7 @@
       "gp": 3,
       "pts": 4,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Turkey": {
       "code": "tr",
@@ -338,7 +338,7 @@
       "gp": 3,
       "pts": 3,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Curacao": {
       "code": "cw",
@@ -347,7 +347,7 @@
       "gp": 3,
       "pts": 1,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Ivory Coast": {
       "code": "ci",
@@ -356,7 +356,7 @@
       "gp": 3,
       "pts": 6,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Ecuador": {
       "code": "ec",
@@ -365,7 +365,7 @@
       "gp": 3,
       "pts": 4,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Sweden": {
       "code": "se",
@@ -374,7 +374,7 @@
       "gp": 3,
       "pts": 4,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Tunisia": {
       "code": "tn",
@@ -383,7 +383,7 @@
       "gp": 3,
       "pts": 0,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Egypt": {
       "code": "eg",
