@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Egypt–Iran",
+    "updatedTill": "Croatia–Ghana",
     "updatedDate": "Jun 27",
-    "lastSync": "2026-06-27T20:03:19.523Z"
+    "lastSync": "2026-06-27T23:07:14.417Z"
   },
   "players": [
     {
@@ -146,8 +146,8 @@
       "code": "hr",
       "ab": "CRO",
       "strength": 12,
-      "gp": 2,
-      "pts": 3,
+      "gp": 3,
+      "pts": 6,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -155,8 +155,8 @@
       "code": "gb-eng",
       "ab": "ENG",
       "strength": 42,
-      "gp": 2,
-      "pts": 4,
+      "gp": 3,
+      "pts": 7,
       "stage": "GROUP",
       "eliminated": false
     },
@@ -497,7 +497,7 @@
       "code": "gh",
       "ab": "GHA",
       "strength": 5,
-      "gp": 2,
+      "gp": 3,
       "pts": 4,
       "stage": "GROUP",
       "eliminated": false
@@ -506,7 +506,7 @@
       "code": "pa",
       "ab": "PAN",
       "strength": 2,
-      "gp": 2,
+      "gp": 3,
       "pts": 0,
       "stage": "GROUP",
       "eliminated": false
@@ -1039,23 +1039,27 @@
       "as": 1,
       "b": "Iran",
       "bs": 1,
-      "group": "G",
-      "lastLabel": "Egypt–Iran"
+      "group": "G"
+    },
+    {
+      "date": "Jun 27",
+      "a": "Panama",
+      "as": 0,
+      "b": "England",
+      "bs": 2,
+      "group": "L"
+    },
+    {
+      "date": "Jun 27",
+      "a": "Croatia",
+      "as": 2,
+      "b": "Ghana",
+      "bs": 1,
+      "group": "L",
+      "lastLabel": "Croatia–Ghana"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-27T21:00:00Z",
-      "group": "L",
-      "a": "Panama",
-      "b": "England"
-    },
-    {
-      "utc": "2026-06-27T21:00:00Z",
-      "group": "L",
-      "a": "Croatia",
-      "b": "Ghana"
-    },
     {
       "utc": "2026-06-27T23:30:00Z",
       "group": "K",
@@ -1091,6 +1095,18 @@
       "group": "",
       "a": "Brazil",
       "b": "Japan"
+    },
+    {
+      "utc": "2026-06-30T01:00:00Z",
+      "group": "",
+      "a": "Netherlands",
+      "b": "Morocco"
+    },
+    {
+      "utc": "2026-07-02T00:00:00Z",
+      "group": "",
+      "a": "USA",
+      "b": "Bosnia"
     }
   ]
 }
