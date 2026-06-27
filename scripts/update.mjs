@@ -81,8 +81,13 @@ async function main(){
     }
   }
 
-  // group-stage eliminations: only once knockouts are set and team has finished its 3 group games
-  if(knockoutExists){
+  // group-stage eliminations: only once the FULL round-of-32 bracket is known.
+  // We mark a group team out only after every R32 slot has resolved to a real
+  // team (inKnockout holds all 32 qualifiers). Before that, the feed can still
+  // show placeholder slots ("Winner Group X"), and the old check wrongly knocked
+  // out group winners whose R32 fixture hadn't populated yet.
+  const R32_SIZE = 32;
+  if(knockoutExists && inKnockout.size >= R32_SIZE){
     for(const k of teamKeys){
       const t=data.teams[k];
       if(t.stage==="GROUP" && t.gp>=3 && !inKnockout.has(k)) t.eliminated=true;
