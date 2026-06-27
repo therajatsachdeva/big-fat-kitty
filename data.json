@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Cape Verde–Saudi Arabia",
+    "updatedTill": "Egypt–Iran",
     "updatedDate": "Jun 27",
-    "lastSync": "2026-06-27T04:56:48.312Z"
+    "lastSync": "2026-06-27T07:34:32.242Z"
   },
   "players": [
     {
@@ -227,10 +227,10 @@
       "code": "be",
       "ab": "BEL",
       "strength": 18,
-      "gp": 2,
-      "pts": 2,
+      "gp": 3,
+      "pts": 5,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Japan": {
       "code": "jp",
@@ -389,28 +389,28 @@
       "code": "eg",
       "ab": "EGY",
       "strength": 6,
-      "gp": 2,
-      "pts": 4,
+      "gp": 3,
+      "pts": 5,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Iran": {
       "code": "ir",
       "ab": "IRN",
       "strength": 6,
-      "gp": 2,
-      "pts": 2,
+      "gp": 3,
+      "pts": 3,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "New Zealand": {
       "code": "nz",
       "ab": "NZL",
       "strength": 2,
-      "gp": 2,
+      "gp": 3,
       "pts": 1,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Cape Verde": {
       "code": "cv",
@@ -1023,23 +1023,27 @@
       "as": 0,
       "b": "Saudi Arabia",
       "bs": 0,
-      "group": "H",
-      "lastLabel": "Cape Verde–Saudi Arabia"
+      "group": "H"
+    },
+    {
+      "date": "Jun 27",
+      "a": "New Zealand",
+      "as": 1,
+      "b": "Belgium",
+      "bs": 5,
+      "group": "G"
+    },
+    {
+      "date": "Jun 27",
+      "a": "Egypt",
+      "as": 1,
+      "b": "Iran",
+      "bs": 1,
+      "group": "G",
+      "lastLabel": "Egypt–Iran"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-27T03:00:00Z",
-      "group": "G",
-      "a": "New Zealand",
-      "b": "Belgium"
-    },
-    {
-      "utc": "2026-06-27T03:00:00Z",
-      "group": "G",
-      "a": "Egypt",
-      "b": "Iran"
-    },
     {
       "utc": "2026-06-27T21:00:00Z",
       "group": "L",
@@ -1075,6 +1079,18 @@
       "group": "J",
       "a": "Algeria",
       "b": "Austria"
+    },
+    {
+      "utc": "2026-06-28T19:00:00Z",
+      "group": "",
+      "a": "South Africa",
+      "b": "Canada"
+    },
+    {
+      "utc": "2026-06-29T17:00:00Z",
+      "group": "",
+      "a": "Brazil",
+      "b": "Japan"
     }
   ]
 }
