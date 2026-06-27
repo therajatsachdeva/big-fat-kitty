@@ -163,6 +163,26 @@
     color:#bff5d6;border:1px solid #1c7a48;border-radius:100px;padding:9px 16px;font-size:12.5px;font-weight:600;
     opacity:0;pointer-events:none;transition:.25s}
   .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  /* trash talk */
+  .res .chip .trash-btn{margin-top:8px;width:100%;font:inherit;font-size:10px;font-weight:700;letter-spacing:.04em;
+    text-transform:uppercase;color:var(--gold);background:rgba(244,201,93,.10);border:1px solid rgba(244,201,93,.35);
+    border-radius:8px;padding:5px 6px;cursor:pointer}
+  .res .chip .trash-btn:active{background:rgba(244,201,93,.20)}
+  .tm-overlay{position:fixed;inset:0;background:rgba(5,8,18,.72);backdrop-filter:blur(3px);z-index:60;display:none;
+    align-items:flex-end;justify-content:center}
+  .tm-overlay.show{display:flex}
+  .tm-sheet{background:var(--card);border:1px solid var(--line);border-top-left-radius:20px;border-top-right-radius:20px;
+    width:100%;max-width:540px;max-height:84vh;overflow-y:auto;
+    padding:16px 16px calc(18px + env(safe-area-inset-bottom));box-shadow:0 -20px 60px rgba(0,0,0,.5)}
+  .tm-grab{width:40px;height:4px;border-radius:3px;background:var(--line);margin:0 auto 14px}
+  .tm-head{font-weight:800;font-size:16px;color:var(--text)}
+  .tm-sub{font-size:12px;color:var(--muted);margin:2px 0 14px}
+  .tm-line{display:block;width:100%;text-align:left;font:inherit;font-size:13.5px;line-height:1.46;color:var(--text);
+    background:var(--ink-2);border:1px solid var(--line);border-radius:12px;padding:12px 13px;margin-bottom:9px;cursor:pointer}
+  .tm-line:active{border-color:rgba(244,201,93,.55)}
+  .tm-line .go{display:block;margin-top:8px;font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--win)}
+  .tm-close{display:block;width:100%;text-align:center;font:inherit;font-size:13px;font-weight:700;color:var(--muted);
+    background:none;border:none;padding:11px;margin-top:2px;cursor:pointer}
 </style>
 </head>
 <body>
@@ -228,6 +248,15 @@
   <button id="waCopy" class="wa-copy">Copy</button>
 </div></div>
 <div id="toast" class="toast"></div>
+<div id="trashModal" class="tm-overlay">
+  <div class="tm-sheet" id="tmSheet" role="dialog" aria-modal="true">
+    <div class="tm-grab"></div>
+    <div class="tm-head" id="tmHead"></div>
+    <div class="tm-sub">Tap a line to send it on WhatsApp</div>
+    <div id="tmLines"></div>
+    <button class="tm-close" id="tmClose">Close</button>
+  </div>
+</div>
 
 <script>
 /* Offline placeholder. The live data lives in data.json, which the daily
@@ -272,7 +301,6 @@ const PALETTE = ["#F4C95D","#6C8CFF","#34D27B","#F4A259","#E0729B","#56C7D6","#B
 
 /* ---------- helpers ---------- */
 const ownerOf = t => (PLAYERS.find(p => p.teams.includes(t)) || {}).name || null;
-const bothOut = p => p.teams.every(t => TEAM[t] && TEAM[t].eliminated);
 const clamp = (x,lo=0,hi=1)=>Math.max(lo,Math.min(hi,x));
 const strengthOf = t => (TEAM[t] && TEAM[t].strength) || 0;
 const fmt = n => n.toLocaleString('en-IN');
@@ -286,10 +314,41 @@ function fl(t){
 }
 
 /* ---------- pot (exact, from results) ---------- */
+// A player keeps every rupee they've already paid in. Per the rules, once BOTH
+// their teams are knocked out they simply stop paying in from that point on — they
+// are never refunded. So instead of erasing a player's whole history when they're
+// out (which made the kitty lurch downward), we work out the match position after
+// which each team is gone, and freeze a player's payments only for matches that
+// happen after both of their teams are out.
+function teamOutIndex(){
+  const out = {};            // team -> match index after which it's eliminated
+  let lastGroupIdx = -1;
+  DATA.matches.forEach((m,i)=>{ if(m.group) lastGroupIdx = i; });
+  // knockout losers are out at the match they lost
+  DATA.matches.forEach((m,i)=>{
+    if(!m.group && m.as!==m.bs){
+      const loser = m.as>m.bs ? m.b : m.a;
+      if(out[loser]===undefined) out[loser]=i;
+    }
+  });
+  // group-stage exits (flagged on the team) are out once the group stage ends
+  for(const t in TEAM){
+    if(TEAM[t].eliminated && out[t]===undefined) out[t]=lastGroupIdx;
+  }
+  return out;
+}
+
 function computePot(){
   const owed = Object.fromEntries(PLAYERS.map(p=>[p.name,0]));
+  const outIdx = teamOutIndex();
+  // freeze[player] = match index after which they stop paying (Infinity = never)
+  const freeze = {};
+  for(const p of PLAYERS){
+    const idxs = p.teams.map(t => outIdx[t]!==undefined ? outIdx[t] : Infinity);
+    freeze[p.name] = Math.max(...idxs);   // both teams out only at the later of the two
+  }
   let last="—", lastDate="";
-  for(const m of DATA.matches){
+  DATA.matches.forEach((m,i)=>{
     last = m.lastLabel ? m.lastLabel : m.a+"–"+m.b;
     lastDate = m.date || lastDate;
     const events=[]; const oa=ownerOf(m.a), ob=ownerOf(m.b);
@@ -297,8 +356,12 @@ function computePot(){
     else if(m.bs>m.as){ if(ob) events.push([ob,500]); }
     else { if(oa) events.push([oa,250]); if(ob) events.push([ob,250]); }
     for(const [owner,amt] of events)
-      for(const p of PLAYERS){ if(p.name===owner||bothOut(p)) continue; owed[p.name]+=amt; }
-  }
+      for(const p of PLAYERS){
+        if(p.name===owner) continue;
+        if(i > freeze[p.name]) continue;   // both their teams were already out before this match
+        owed[p.name]+=amt;
+      }
+  });
   return {owed, total:Object.values(owed).reduce((a,b)=>a+b,0), last, lastDate};
 }
 
@@ -411,14 +474,23 @@ function renderMatches(){
 }
 
 function renderResults(){
-  const owned = DATA.matches.filter(m=>ownerOf(m.a)||ownerOf(m.b));
+  // newest first: latest match sits on the left, older ones trail off to the right
+  const owned = DATA.matches.filter(m=>ownerOf(m.a)||ownerOf(m.b)).reverse();
   document.getElementById('results').innerHTML = owned.map(m=>{
-    const draw=m.as===m.bs, oa=ownerOf(m.a), ob=ownerOf(m.b); let tag="";
+    const draw=m.as===m.bs, oa=ownerOf(m.a), ob=ownerOf(m.b); let tag="", btn="";
     if(draw && (oa||ob)) tag=`<div class="tag dr">${[oa,ob].filter(Boolean).join(' & ')} drew</div>`;
-    else if(!draw){ const wt=m.as>m.bs?m.a:m.b, wo=ownerOf(wt); if(wo) tag=`<div class="tag w">${wo} · win</div>`; }
+    else if(!draw){
+      const wt=m.as>m.bs?m.a:m.b, lt=m.as>m.bs?m.b:m.a, wo=ownerOf(wt);
+      const ws=Math.max(m.as,m.bs), ls=Math.min(m.as,m.bs);
+      if(wo){
+        tag=`<div class="tag w">${wo} · win</div>`;
+        // winner's owner can talk trash about the team (and rival) they beat
+        btn=`<button class="trash-btn" data-w="${wt}" data-l="${lt}" data-ws="${ws}" data-ls="${ls}">talk trash 🔥</button>`;
+      }
+    }
     return `<div class="chip">
       <div class="ln"><span class="t">${fl(m.a)}${m.a}</span><span class="sc">${m.as}</span></div>
-      <div class="ln"><span class="t">${fl(m.b)}${m.b}</span><span class="sc">${m.bs}</span></div>${tag}</div>`;
+      <div class="ln"><span class="t">${fl(m.b)}${m.b}</span><span class="sc">${m.bs}</span></div>${tag}${btn}</div>`;
   }).join("");
 }
 
@@ -458,6 +530,106 @@ document.getElementById('waCopy').addEventListener('click',async()=>{
   try{ await navigator.clipboard.writeText(buildSummary()); toast('Summary copied — paste in WhatsApp'); }
   catch(e){ window.open('https://wa.me/?text='+encodeURIComponent(buildSummary()),'_blank'); }
 });
+
+/* ---------- trash talk ---------- */
+// Lines fire on the WINNER's chip and roast the team (and rival) they beat,
+// so everything is keyed by the LOSING team. To roast another side, just add a
+// key below, e.g.  Mexico:[`line one`,`line two`],
+const TRASH = {
+  teams: {
+    England:[
+      `"It's coming home." The team is, yes — on a budget Ryanair flight, tomorrow morning.`,
+      `Watching this squad is like waiting for a badly delayed train that finally arrives by crashing into a wall.`,
+      `It's not coming home. It never was. It lives abroad now, and honestly it seems happier.`
+    ],
+    USA:[
+      `They call it "soccer," play it like rugby, and lose like it's a national pastime.`,
+      `The US approaches football the way it approaches healthcare: loudly, expensively, and with mixed results.`
+    ],
+    Brazil:[
+      `All that fancy, dancing footwork — just to lose 1–0 to a team of Eastern European plumbers.`
+    ],
+    Germany:[
+      `The famous German machine is looking remarkably like a broken toaster this tournament.`
+    ],
+    France:[
+      `The French squad giving up and turning on each other. How original. Never seen that one before.`
+    ],
+    Italy:[
+      `I've seen less diving at the Olympics. Get up, you absolute melts.`
+    ],
+    Spain:[
+      `9,000 passes, 80% possession, zero goals. It's not a football match, it's a devastatingly boring geometry lesson.`
+    ],
+    Portugal:[
+      `Is it a national team, or ten men desperately trying to pass to a bloke who should be in a retirement village?`,
+      `Portugal's entire strategy still feels like waiting for Cristiano Ronaldo to be 28 again.`
+    ],
+    Argentina:[
+      `Argentina. Defending champions. Out here defending absolutely nothing.`,
+      `Take away the deeply questionable penalties and you're basically a tribute act for the 1980s.`
+    ],
+    Netherlands:[
+      `The Dutch have lost three World Cup finals, so tonight they skipped the queue and took the heartbreak early, in the group stage. Very efficient. Very Dutch.`
+    ]
+  },
+  generic:[
+    `Did they actually train for this, or just watch a YouTube tutorial on the coach over?`,
+    `I almost feel sorry for you. Almost. Mostly it's just really, really funny.`,
+    `Are they a national team, or eleven blokes who met at a bus stop and fancied a kickabout?`,
+    `I'd say they left it all on the pitch, but it looks more like they left it in the hotel minibar.`,
+    `They were running in wet cement out there — and with significantly less tactical awareness.`,
+    `They didn't lose. They simply avoided the fatigue of playing another round. Brilliant strategy, really.`,
+    `I've seen better defensive coordination in a toddler's sandbox dispute.`,
+    `Ninety minutes hoping for a miracle when they should've just put the kettle on and accepted mediocrity.`,
+    `Interesting tactic from their manager — concede early, let everyone beat the traffic.`,
+    `Their midfield's like modern art. Expensive, confusing, achieves nothing.`,
+    `There's something admirable about a team that refuses to let ability affect confidence.`,
+    `Possession stats of Spain, threat level of a vegan barbecue.`,
+    `Astonishing how much urgency a team can show while accomplishing absolutely nothing.`,
+    `There was a case for VAR. There was. It watched twice, agreed they were worse, and went back to its lunch.`
+  ],
+  thrash:[   // only surfaced when the margin is 3+
+    `It had the structure of a true-crime podcast — you knew who did it inside ten minutes and stayed for the rest out of politeness.`,
+    `Somewhere around the hour mark it stopped being a football match and became a documentary about loss.`
+  ],
+  money:[
+    `It was never about the money. It's the small sigh you make when you send the ₹500. That's what I collect.`
+  ]
+};
+const shuffle = a => { for(let i=a.length-1;i>0;i--){ const j=Math.random()*(i+1)|0; [a[i],a[j]]=[a[j],a[i]]; } return a; };
+let CUR_TRASH = null;
+
+function pickTrash(loser, margin){
+  const lines=[];
+  lines.push(...shuffle((TRASH.teams[loser]||[]).slice()).slice(0,3));  // team-specific first
+  lines.push(...shuffle(TRASH.generic.slice()).slice(0,2));
+  if(margin>=3) lines.push(shuffle(TRASH.thrash.slice())[0]);
+  lines.push(TRASH.money[0]);
+  return [...new Set(lines.filter(Boolean))].slice(0,6);
+}
+function openTrash(btn){
+  const w=btn.dataset.w, l=btn.dataset.l, ws=+btn.dataset.ws, ls=+btn.dataset.ls;
+  CUR_TRASH={ header:`${w} ${ws}–${ls} ${l}`, lines:pickTrash(l, ws-ls) };
+  document.getElementById('tmHead').textContent=CUR_TRASH.header;
+  document.getElementById('tmLines').innerHTML = CUR_TRASH.lines.map((t,i)=>
+    `<button class="tm-line" data-i="${i}">${t}<span class="go">Send on WhatsApp →</span></button>`).join("");
+  document.getElementById('trashModal').classList.add('show');
+}
+function closeTrash(){ document.getElementById('trashModal').classList.remove('show'); }
+function shareTrash(i){
+  if(!CUR_TRASH) return;
+  const stamp=new Date().toLocaleDateString('en-GB',{day:'numeric',month:'short'}).replace(' ','').toLowerCase();
+  const url=location.href.split('?')[0]+'?d='+stamp;
+  const line=CUR_TRASH.lines[i].replace('₹','₹\u200B');   // stop WhatsApp linkifying the amount
+  const text=`⚽ ${CUR_TRASH.header}\n\n${line}\n\n${url}`;
+  window.open('https://wa.me/?text='+encodeURIComponent(text),'_blank');
+  closeTrash();
+}
+document.getElementById('results').addEventListener('click',e=>{ const b=e.target.closest('.trash-btn'); if(b) openTrash(b); });
+document.getElementById('tmLines').addEventListener('click',e=>{ const b=e.target.closest('.tm-line'); if(b) shareTrash(+b.dataset.i); });
+document.getElementById('tmClose').addEventListener('click',closeTrash);
+document.getElementById('trashModal').addEventListener('click',e=>{ if(e.target.id==='trashModal') closeTrash(); });
 
 fetch('data.json',{cache:'no-store'})
   .then(r=>{ if(!r.ok) throw 0; return r.json(); })
