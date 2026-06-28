@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Algeria–Austria",
+    "updatedTill": "South Africa–Canada",
     "updatedDate": "Jun 28",
-    "lastSync": "2026-06-28T20:06:42.342Z"
+    "lastSync": "2026-06-28T21:36:25.376Z"
   },
   "players": [
     {
@@ -248,7 +248,7 @@
       "gp": 3,
       "pts": 4,
       "stage": "LAST_32",
-      "eliminated": false
+      "eliminated": true
     },
     "Czechia": {
       "code": "cz",
@@ -1087,17 +1087,19 @@
       "as": 3,
       "b": "Austria",
       "bs": 3,
-      "group": "J",
-      "lastLabel": "Algeria–Austria"
+      "group": "J"
+    },
+    {
+      "date": "Jun 28",
+      "a": "South Africa",
+      "as": 0,
+      "b": "Canada",
+      "bs": 1,
+      "group": "",
+      "lastLabel": "South Africa–Canada"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-28T19:00:00Z",
-      "group": "",
-      "a": "South Africa",
-      "b": "Canada"
-    },
     {
       "utc": "2026-06-29T17:00:00Z",
       "group": "",
@@ -1139,6 +1141,12 @@
       "group": "",
       "a": "England",
       "b": "DR Congo"
+    },
+    {
+      "utc": "2026-07-01T20:00:00Z",
+      "group": "",
+      "a": "Belgium",
+      "b": "Senegal"
     }
   ]
 }
