@@ -2,7 +2,7 @@
   "meta": {
     "updatedTill": "Algeria–Austria",
     "updatedDate": "Jun 28",
-    "lastSync": "2026-06-28T05:20:42.385Z"
+    "lastSync": "2026-06-28T08:02:20.915Z"
   },
   "players": [
     {
@@ -85,7 +85,7 @@
       "strength": 50,
       "gp": 3,
       "pts": 7,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "USA": {
@@ -103,7 +103,7 @@
       "strength": 48,
       "gp": 3,
       "pts": 9,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Mexico": {
@@ -112,7 +112,7 @@
       "strength": 11,
       "gp": 3,
       "pts": 9,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Brazil": {
@@ -131,7 +131,7 @@
       "gp": 3,
       "pts": 3,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Netherlands": {
       "code": "nl",
@@ -148,7 +148,7 @@
       "strength": 12,
       "gp": 3,
       "pts": 6,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "England": {
@@ -157,7 +157,7 @@
       "strength": 42,
       "gp": 3,
       "pts": 7,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Uruguay": {
@@ -167,7 +167,7 @@
       "gp": 3,
       "pts": 2,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Argentina": {
       "code": "ar",
@@ -175,7 +175,7 @@
       "strength": 40,
       "gp": 3,
       "pts": 9,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Norway": {
@@ -184,7 +184,7 @@
       "strength": 12,
       "gp": 3,
       "pts": 6,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Portugal": {
@@ -193,7 +193,7 @@
       "strength": 35,
       "gp": 3,
       "pts": 5,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Morocco": {
@@ -211,7 +211,7 @@
       "strength": 32,
       "gp": 3,
       "pts": 6,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Colombia": {
@@ -220,7 +220,7 @@
       "strength": 15,
       "gp": 3,
       "pts": 7,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Belgium": {
@@ -229,7 +229,7 @@
       "strength": 18,
       "gp": 3,
       "pts": 5,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Japan": {
@@ -257,7 +257,7 @@
       "gp": 3,
       "pts": 1,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Canada": {
       "code": "ca",
@@ -284,7 +284,7 @@
       "gp": 3,
       "pts": 1,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Switzerland": {
       "code": "ch",
@@ -292,7 +292,7 @@
       "strength": 12,
       "gp": 3,
       "pts": 7,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Haiti": {
@@ -302,7 +302,7 @@
       "gp": 3,
       "pts": 0,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Scotland": {
       "code": "gb-sct",
@@ -311,7 +311,7 @@
       "gp": 3,
       "pts": 3,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Paraguay": {
       "code": "py",
@@ -319,7 +319,7 @@
       "strength": 4,
       "gp": 3,
       "pts": 4,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Australia": {
@@ -328,7 +328,7 @@
       "strength": 4,
       "gp": 3,
       "pts": 4,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Turkey": {
@@ -338,7 +338,7 @@
       "gp": 3,
       "pts": 3,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Curacao": {
       "code": "cw",
@@ -347,7 +347,7 @@
       "gp": 3,
       "pts": 1,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Ivory Coast": {
       "code": "ci",
@@ -355,7 +355,7 @@
       "strength": 8,
       "gp": 3,
       "pts": 6,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Ecuador": {
@@ -364,7 +364,7 @@
       "strength": 9,
       "gp": 3,
       "pts": 4,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Sweden": {
@@ -373,7 +373,7 @@
       "strength": 9,
       "gp": 3,
       "pts": 4,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Tunisia": {
@@ -383,7 +383,7 @@
       "gp": 3,
       "pts": 0,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Egypt": {
       "code": "eg",
@@ -391,7 +391,7 @@
       "strength": 6,
       "gp": 3,
       "pts": 5,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Iran": {
@@ -401,7 +401,7 @@
       "gp": 3,
       "pts": 3,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "New Zealand": {
       "code": "nz",
@@ -410,7 +410,7 @@
       "gp": 3,
       "pts": 1,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Cape Verde": {
       "code": "cv",
@@ -418,7 +418,7 @@
       "strength": 1,
       "gp": 3,
       "pts": 3,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Saudi Arabia": {
@@ -428,7 +428,7 @@
       "gp": 3,
       "pts": 2,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Senegal": {
       "code": "sn",
@@ -436,7 +436,7 @@
       "strength": 14,
       "gp": 3,
       "pts": 3,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Iraq": {
@@ -446,7 +446,7 @@
       "gp": 3,
       "pts": 0,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Algeria": {
       "code": "dz",
@@ -454,7 +454,7 @@
       "strength": 6,
       "gp": 3,
       "pts": 4,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Austria": {
@@ -463,7 +463,7 @@
       "strength": 9,
       "gp": 3,
       "pts": 4,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Jordan": {
@@ -473,7 +473,7 @@
       "gp": 3,
       "pts": 0,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "DR Congo": {
       "code": "cd",
@@ -481,7 +481,7 @@
       "strength": 4,
       "gp": 3,
       "pts": 4,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Uzbekistan": {
@@ -491,7 +491,7 @@
       "gp": 3,
       "pts": 0,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     },
     "Ghana": {
       "code": "gh",
@@ -499,7 +499,7 @@
       "strength": 5,
       "gp": 3,
       "pts": 4,
-      "stage": "GROUP",
+      "stage": "LAST_32",
       "eliminated": false
     },
     "Panama": {
@@ -509,7 +509,7 @@
       "gp": 3,
       "pts": 0,
       "stage": "GROUP",
-      "eliminated": false
+      "eliminated": true
     }
   },
   "matches": [
@@ -1105,16 +1105,40 @@
       "b": "Japan"
     },
     {
+      "utc": "2026-06-29T20:30:00Z",
+      "group": "",
+      "a": "Germany",
+      "b": "Paraguay"
+    },
+    {
       "utc": "2026-06-30T01:00:00Z",
       "group": "",
       "a": "Netherlands",
       "b": "Morocco"
     },
     {
-      "utc": "2026-07-02T00:00:00Z",
+      "utc": "2026-06-30T17:00:00Z",
       "group": "",
-      "a": "USA",
-      "b": "Bosnia"
+      "a": "Ivory Coast",
+      "b": "Norway"
+    },
+    {
+      "utc": "2026-06-30T21:00:00Z",
+      "group": "",
+      "a": "France",
+      "b": "Sweden"
+    },
+    {
+      "utc": "2026-07-01T01:00:00Z",
+      "group": "",
+      "a": "Mexico",
+      "b": "Ecuador"
+    },
+    {
+      "utc": "2026-07-01T16:00:00Z",
+      "group": "",
+      "a": "England",
+      "b": "DR Congo"
     }
   ]
 }
