@@ -81,17 +81,39 @@ async function main(){
     }
   }
 
-  // group-stage eliminations: only once the FULL round-of-32 bracket is known.
-  // We mark a group team out only after every R32 slot has resolved to a real
-  // team (inKnockout holds all 32 qualifiers). Before that, the feed can still
-  // show placeholder slots ("Winner Group X"), and the old check wrongly knocked
-  // out group winners whose R32 fixture hadn't populated yet.
-  const R32_SIZE = 32;
-  if(knockoutExists && inKnockout.size >= R32_SIZE){
-    for(const k of teamKeys){
-      const t=data.teams[k];
-      if(t.stage==="GROUP" && t.gp>=3 && !inKnockout.has(k)) t.eliminated=true;
+  // ---- group-stage eliminations, computed from the standings themselves ----
+  // This no longer waits on football-data to populate the R32 bracket. We build
+  // each group table from the finished group games, then:
+  //   • a team that finishes BOTTOM (4th) of a completed group is out immediately
+  //   • once ALL 12 groups are complete, the 4 weakest 3rd-placed teams are out too
+  //     (the top 8 of the 12 third-placed teams advance in the 48-team format)
+  // Knockout-round losers are already marked out above, as their games finish.
+  const groups = {};
+  for(const m of finished){
+    if(!m.group) continue;                       // skip knockout games
+    const g = (groups[m.group] ||= {});
+    for(const [t,gf,ga] of [[m.a,m.as,m.bs],[m.b,m.bs,m.as]]){
+      const r = (g[t] ||= {pts:0,gd:0,gf:0,gp:0});
+      r.gp++; r.gf+=gf; r.gd+=gf-ga;
     }
+    if(m.as>m.bs) g[m.a].pts+=3;
+    else if(m.bs>m.as) g[m.b].pts+=3;
+    else { g[m.a].pts++; g[m.b].pts++; }
+  }
+  const byStanding = (x,y)=> y.pts-x.pts || y.gd-x.gd || y.gf-x.gf;
+  const thirds = [];
+  const groupIds = Object.keys(groups);
+  for(const gid of groupIds){
+    const rows = Object.entries(groups[gid]).map(([t,r])=>({t,...r})).sort(byStanding);
+    const complete = rows.length===4 && rows.every(r=>r.gp>=3);
+    if(!complete) continue;
+    data.teams[rows[3].t].eliminated = true;     // 4th place: definitely out
+    thirds.push(rows[2]);                         // 3rd place: held for the best-thirds cut
+  }
+  // settle the best-thirds only when every group has finished (all 12 thirds known)
+  const TOTAL_GROUPS = 12;
+  if(groupIds.length===TOTAL_GROUPS && thirds.length===TOTAL_GROUPS){
+    thirds.sort(byStanding).slice(8).forEach(r=> data.teams[r.t].eliminated = true);
   }
 
   finished.sort((x,y)=> new Date(x._utc)-new Date(y._utc));
