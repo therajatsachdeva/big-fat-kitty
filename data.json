@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "South Africa–Canada",
-    "updatedDate": "Jun 28",
-    "lastSync": "2026-06-29T16:35:25.024Z"
+    "updatedTill": "Brazil–Japan",
+    "updatedDate": "Jun 29",
+    "lastSync": "2026-06-29T20:46:31.851Z"
   },
   "players": [
     {
@@ -239,7 +239,7 @@
       "gp": 3,
       "pts": 5,
       "stage": "LAST_32",
-      "eliminated": false
+      "eliminated": true
     },
     "South Africa": {
       "code": "za",
@@ -1095,17 +1095,19 @@
       "as": 0,
       "b": "Canada",
       "bs": 1,
+      "group": ""
+    },
+    {
+      "date": "Jun 29",
+      "a": "Brazil",
+      "as": 2,
+      "b": "Japan",
+      "bs": 1,
       "group": "",
-      "lastLabel": "South Africa–Canada"
+      "lastLabel": "Brazil–Japan"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-29T17:00:00Z",
-      "group": "",
-      "a": "Brazil",
-      "b": "Japan"
-    },
     {
       "utc": "2026-06-29T20:30:00Z",
       "group": "",
@@ -1147,6 +1149,12 @@
       "group": "",
       "a": "Belgium",
       "b": "Senegal"
+    },
+    {
+      "utc": "2026-07-02T00:00:00Z",
+      "group": "",
+      "a": "USA",
+      "b": "Bosnia"
     }
   ]
 }
