@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Ivory Coast–Norway",
+    "updatedTill": "France–Sweden",
     "updatedDate": "Jun 30",
-    "lastSync": "2026-06-30T20:51:34.225Z"
+    "lastSync": "2026-06-30T23:16:59.491Z"
   },
   "players": [
     {
@@ -374,7 +374,7 @@
       "gp": 3,
       "pts": 4,
       "stage": "LAST_32",
-      "eliminated": false
+      "eliminated": true
     },
     "Tunisia": {
       "code": "tn",
@@ -1127,17 +1127,19 @@
       "as": 1,
       "b": "Norway",
       "bs": 2,
+      "group": ""
+    },
+    {
+      "date": "Jun 30",
+      "a": "France",
+      "as": 3,
+      "b": "Sweden",
+      "bs": 0,
       "group": "",
-      "lastLabel": "Ivory Coast–Norway"
+      "lastLabel": "France–Sweden"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-30T21:00:00Z",
-      "group": "",
-      "a": "France",
-      "b": "Sweden"
-    },
     {
       "utc": "2026-07-01T01:00:00Z",
       "group": "",
@@ -1179,6 +1181,12 @@
       "group": "",
       "a": "Switzerland",
       "b": "Algeria"
+    },
+    {
+      "utc": "2026-07-03T18:00:00Z",
+      "group": "",
+      "a": "Australia",
+      "b": "Egypt"
     }
   ]
 }
