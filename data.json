@@ -2,7 +2,7 @@
   "meta": {
     "updatedTill": "Netherlands–Morocco",
     "updatedDate": "Jun 30",
-    "lastSync": "2026-06-30T05:09:29.180Z"
+    "lastSync": "2026-06-30T08:05:39.261Z"
   },
   "players": [
     {
@@ -140,7 +140,7 @@
       "gp": 3,
       "pts": 7,
       "stage": "LAST_32",
-      "eliminated": false
+      "eliminated": true
     },
     "Croatia": {
       "code": "hr",
@@ -202,7 +202,7 @@
       "strength": 19,
       "gp": 3,
       "pts": 7,
-      "stage": "LAST_32",
+      "stage": "LAST_16",
       "eliminated": false
     },
     "Germany": {
@@ -212,7 +212,7 @@
       "gp": 3,
       "pts": 6,
       "stage": "LAST_32",
-      "eliminated": false
+      "eliminated": true
     },
     "Colombia": {
       "code": "co",
@@ -265,7 +265,7 @@
       "strength": 6,
       "gp": 3,
       "pts": 4,
-      "stage": "LAST_32",
+      "stage": "LAST_16",
       "eliminated": false
     },
     "Bosnia": {
