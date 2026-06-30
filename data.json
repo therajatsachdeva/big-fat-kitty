@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Brazil–Japan",
-    "updatedDate": "Jun 29",
-    "lastSync": "2026-06-29T23:02:30.924Z"
+    "updatedTill": "Netherlands–Morocco",
+    "updatedDate": "Jun 30",
+    "lastSync": "2026-06-30T05:09:29.180Z"
   },
   "players": [
     {
@@ -1103,23 +1103,27 @@
       "as": 2,
       "b": "Japan",
       "bs": 1,
+      "group": ""
+    },
+    {
+      "date": "Jun 29",
+      "a": "Germany",
+      "as": 4,
+      "b": "Paraguay",
+      "bs": 5,
+      "group": ""
+    },
+    {
+      "date": "Jun 30",
+      "a": "Netherlands",
+      "as": 3,
+      "b": "Morocco",
+      "bs": 4,
       "group": "",
-      "lastLabel": "Brazil–Japan"
+      "lastLabel": "Netherlands–Morocco"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-29T20:30:00Z",
-      "group": "",
-      "a": "Germany",
-      "b": "Paraguay"
-    },
-    {
-      "utc": "2026-06-30T01:00:00Z",
-      "group": "",
-      "a": "Netherlands",
-      "b": "Morocco"
-    },
     {
       "utc": "2026-06-30T17:00:00Z",
       "group": "",
@@ -1155,6 +1159,18 @@
       "group": "",
       "a": "USA",
       "b": "Bosnia"
+    },
+    {
+      "utc": "2026-07-02T19:00:00Z",
+      "group": "",
+      "a": "Spain",
+      "b": "Austria"
+    },
+    {
+      "utc": "2026-07-02T23:00:00Z",
+      "group": "",
+      "a": "Portugal",
+      "b": "Croatia"
     }
   ]
 }
