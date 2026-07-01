@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "England–DR Congo",
+    "updatedTill": "Belgium–Senegal",
     "updatedDate": "Jul 1",
-    "lastSync": "2026-07-01T20:47:39.353Z"
+    "lastSync": "2026-07-01T23:19:33.390Z"
   },
   "players": [
     {
@@ -437,7 +437,7 @@
       "gp": 3,
       "pts": 3,
       "stage": "LAST_32",
-      "eliminated": false
+      "eliminated": true
     },
     "Iraq": {
       "code": "iq",
@@ -1151,17 +1151,19 @@
       "as": 2,
       "b": "DR Congo",
       "bs": 1,
+      "group": ""
+    },
+    {
+      "date": "Jul 1",
+      "a": "Belgium",
+      "as": 3,
+      "b": "Senegal",
+      "bs": 2,
       "group": "",
-      "lastLabel": "England–DR Congo"
+      "lastLabel": "Belgium–Senegal"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-07-01T20:00:00Z",
-      "group": "",
-      "a": "Belgium",
-      "b": "Senegal"
-    },
     {
       "utc": "2026-07-02T00:00:00Z",
       "group": "",
@@ -1203,6 +1205,12 @@
       "group": "",
       "a": "Colombia",
       "b": "Ghana"
+    },
+    {
+      "utc": "2026-07-04T17:00:00Z",
+      "group": "",
+      "a": "Canada",
+      "b": "Morocco"
     }
   ]
 }
