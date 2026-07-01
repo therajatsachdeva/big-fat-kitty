@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "France–Sweden",
-    "updatedDate": "Jun 30",
-    "lastSync": "2026-06-30T23:16:59.491Z"
+    "updatedTill": "Mexico–Ecuador",
+    "updatedDate": "Jul 1",
+    "lastSync": "2026-07-01T05:26:44.042Z"
   },
   "players": [
     {
@@ -356,7 +356,7 @@
       "gp": 3,
       "pts": 6,
       "stage": "LAST_32",
-      "eliminated": true
+      "eliminated": false
     },
     "Ecuador": {
       "code": "ec",
@@ -365,7 +365,7 @@
       "gp": 3,
       "pts": 4,
       "stage": "LAST_32",
-      "eliminated": false
+      "eliminated": true
     },
     "Sweden": {
       "code": "se",
@@ -1123,28 +1123,28 @@
     },
     {
       "date": "Jun 30",
-      "a": "Ivory Coast",
-      "as": 1,
-      "b": "Norway",
-      "bs": 2,
-      "group": ""
-    },
-    {
-      "date": "Jun 30",
       "a": "France",
       "as": 3,
       "b": "Sweden",
       "bs": 0,
+      "group": ""
+    },
+    {
+      "date": "Jul 1",
+      "a": "Mexico",
+      "as": 2,
+      "b": "Ecuador",
+      "bs": 0,
       "group": "",
-      "lastLabel": "France–Sweden"
+      "lastLabel": "Mexico–Ecuador"
     }
   ],
   "upcoming": [
     {
-      "utc": "2026-07-01T01:00:00Z",
+      "utc": "2026-06-30T17:00:00Z",
       "group": "",
-      "a": "Mexico",
-      "b": "Ecuador"
+      "a": "Ivory Coast",
+      "b": "Norway"
     },
     {
       "utc": "2026-07-01T16:00:00Z",
