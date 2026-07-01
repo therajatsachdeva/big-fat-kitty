@@ -2,7 +2,7 @@
   "meta": {
     "updatedTill": "Mexico–Ecuador",
     "updatedDate": "Jul 1",
-    "lastSync": "2026-07-01T05:26:44.042Z"
+    "lastSync": "2026-07-01T08:35:20.305Z"
   },
   "players": [
     {
@@ -103,7 +103,7 @@
       "strength": 48,
       "gp": 3,
       "pts": 9,
-      "stage": "LAST_32",
+      "stage": "LAST_16",
       "eliminated": false
     },
     "Mexico": {
@@ -121,7 +121,7 @@
       "strength": 36,
       "gp": 3,
       "pts": 7,
-      "stage": "LAST_32",
+      "stage": "LAST_16",
       "eliminated": false
     },
     "Korea": {
@@ -184,7 +184,7 @@
       "strength": 12,
       "gp": 3,
       "pts": 6,
-      "stage": "LAST_32",
+      "stage": "LAST_16",
       "eliminated": false
     },
     "Portugal": {
@@ -319,7 +319,7 @@
       "strength": 4,
       "gp": 3,
       "pts": 4,
-      "stage": "LAST_32",
+      "stage": "LAST_16",
       "eliminated": false
     },
     "Australia": {
@@ -356,7 +356,7 @@
       "gp": 3,
       "pts": 6,
       "stage": "LAST_32",
-      "eliminated": false
+      "eliminated": true
     },
     "Ecuador": {
       "code": "ec",
@@ -1123,6 +1123,14 @@
     },
     {
       "date": "Jun 30",
+      "a": "Ivory Coast",
+      "as": 1,
+      "b": "Norway",
+      "bs": 2,
+      "group": ""
+    },
+    {
+      "date": "Jun 30",
       "a": "France",
       "as": 3,
       "b": "Sweden",
@@ -1140,12 +1148,6 @@
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-06-30T17:00:00Z",
-      "group": "",
-      "a": "Ivory Coast",
-      "b": "Norway"
-    },
     {
       "utc": "2026-07-01T16:00:00Z",
       "group": "",
@@ -1187,6 +1189,12 @@
       "group": "",
       "a": "Australia",
       "b": "Egypt"
+    },
+    {
+      "utc": "2026-07-03T22:00:00Z",
+      "group": "",
+      "a": "Argentina",
+      "b": "Cape Verde"
     }
   ]
 }
