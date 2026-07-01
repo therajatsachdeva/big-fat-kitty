@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Mexico–Ecuador",
+    "updatedTill": "England–DR Congo",
     "updatedDate": "Jul 1",
-    "lastSync": "2026-07-01T15:36:56.293Z"
+    "lastSync": "2026-07-01T20:47:39.353Z"
   },
   "players": [
     {
@@ -482,7 +482,7 @@
       "gp": 3,
       "pts": 4,
       "stage": "LAST_32",
-      "eliminated": false
+      "eliminated": true
     },
     "Uzbekistan": {
       "code": "uz",
@@ -1143,17 +1143,19 @@
       "as": 2,
       "b": "Ecuador",
       "bs": 0,
+      "group": ""
+    },
+    {
+      "date": "Jul 1",
+      "a": "England",
+      "as": 2,
+      "b": "DR Congo",
+      "bs": 1,
       "group": "",
-      "lastLabel": "Mexico–Ecuador"
+      "lastLabel": "England–DR Congo"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-07-01T16:00:00Z",
-      "group": "",
-      "a": "England",
-      "b": "DR Congo"
-    },
     {
       "utc": "2026-07-01T20:00:00Z",
       "group": "",
@@ -1195,6 +1197,12 @@
       "group": "",
       "a": "Argentina",
       "b": "Cape Verde"
+    },
+    {
+      "utc": "2026-07-04T01:30:00Z",
+      "group": "",
+      "a": "Colombia",
+      "b": "Ghana"
     }
   ]
 }
