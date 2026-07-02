@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Belgium–Senegal",
-    "updatedDate": "Jul 1",
-    "lastSync": "2026-07-01T23:19:33.390Z"
+    "updatedTill": "USA–Bosnia",
+    "updatedDate": "Jul 2",
+    "lastSync": "2026-07-02T05:02:29.016Z"
   },
   "players": [
     {
@@ -275,7 +275,7 @@
       "gp": 3,
       "pts": 4,
       "stage": "LAST_32",
-      "eliminated": false
+      "eliminated": true
     },
     "Qatar": {
       "code": "qa",
@@ -1159,17 +1159,19 @@
       "as": 3,
       "b": "Senegal",
       "bs": 2,
+      "group": ""
+    },
+    {
+      "date": "Jul 2",
+      "a": "USA",
+      "as": 2,
+      "b": "Bosnia",
+      "bs": 0,
       "group": "",
-      "lastLabel": "Belgium–Senegal"
+      "lastLabel": "USA–Bosnia"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-07-02T00:00:00Z",
-      "group": "",
-      "a": "USA",
-      "b": "Bosnia"
-    },
     {
       "utc": "2026-07-02T19:00:00Z",
       "group": "",
@@ -1211,6 +1213,12 @@
       "group": "",
       "a": "Canada",
       "b": "Morocco"
+    },
+    {
+      "utc": "2026-07-04T21:00:00Z",
+      "group": "",
+      "a": "Paraguay",
+      "b": "France"
     }
   ]
 }
