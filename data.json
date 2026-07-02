@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "USA–Bosnia",
+    "updatedTill": "Spain–Austria",
     "updatedDate": "Jul 2",
-    "lastSync": "2026-07-02T20:14:29.798Z"
+    "lastSync": "2026-07-02T23:12:17.346Z"
   },
   "players": [
     {
@@ -464,7 +464,7 @@
       "gp": 3,
       "pts": 4,
       "stage": "LAST_32",
-      "eliminated": false
+      "eliminated": true
     },
     "Jordan": {
       "code": "jo",
@@ -1167,17 +1167,19 @@
       "as": 2,
       "b": "Bosnia",
       "bs": 0,
+      "group": ""
+    },
+    {
+      "date": "Jul 2",
+      "a": "Spain",
+      "as": 3,
+      "b": "Austria",
+      "bs": 0,
       "group": "",
-      "lastLabel": "USA–Bosnia"
+      "lastLabel": "Spain–Austria"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-07-02T19:00:00Z",
-      "group": "",
-      "a": "Spain",
-      "b": "Austria"
-    },
     {
       "utc": "2026-07-02T23:00:00Z",
       "group": "",
@@ -1219,6 +1221,12 @@
       "group": "",
       "a": "Paraguay",
       "b": "France"
+    },
+    {
+      "utc": "2026-07-05T20:00:00Z",
+      "group": "",
+      "a": "Brazil",
+      "b": "Norway"
     }
   ]
 }
