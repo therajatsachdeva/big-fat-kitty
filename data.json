@@ -2,7 +2,7 @@
   "meta": {
     "updatedTill": "USA–Bosnia",
     "updatedDate": "Jul 2",
-    "lastSync": "2026-07-02T05:02:29.016Z"
+    "lastSync": "2026-07-02T07:49:44.776Z"
   },
   "players": [
     {
@@ -94,7 +94,7 @@
       "strength": 14,
       "gp": 3,
       "pts": 6,
-      "stage": "LAST_32",
+      "stage": "LAST_16",
       "eliminated": false
     },
     "France": {
@@ -112,7 +112,7 @@
       "strength": 11,
       "gp": 3,
       "pts": 9,
-      "stage": "LAST_32",
+      "stage": "LAST_16",
       "eliminated": false
     },
     "Brazil": {
@@ -157,7 +157,7 @@
       "strength": 42,
       "gp": 3,
       "pts": 7,
-      "stage": "LAST_32",
+      "stage": "LAST_16",
       "eliminated": false
     },
     "Uruguay": {
@@ -229,7 +229,7 @@
       "strength": 18,
       "gp": 3,
       "pts": 5,
-      "stage": "LAST_32",
+      "stage": "LAST_16",
       "eliminated": false
     },
     "Japan": {
