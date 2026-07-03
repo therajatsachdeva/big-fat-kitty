@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Spain–Austria",
+    "updatedTill": "Portugal–Croatia",
     "updatedDate": "Jul 2",
-    "lastSync": "2026-07-02T23:12:17.346Z"
+    "lastSync": "2026-07-03T04:47:10.698Z"
   },
   "players": [
     {
@@ -149,7 +149,7 @@
       "gp": 3,
       "pts": 6,
       "stage": "LAST_32",
-      "eliminated": false
+      "eliminated": true
     },
     "England": {
       "code": "gb-eng",
@@ -1175,17 +1175,19 @@
       "as": 3,
       "b": "Austria",
       "bs": 0,
+      "group": ""
+    },
+    {
+      "date": "Jul 2",
+      "a": "Portugal",
+      "as": 2,
+      "b": "Croatia",
+      "bs": 1,
       "group": "",
-      "lastLabel": "Spain–Austria"
+      "lastLabel": "Portugal–Croatia"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-07-02T23:00:00Z",
-      "group": "",
-      "a": "Portugal",
-      "b": "Croatia"
-    },
     {
       "utc": "2026-07-03T03:00:00Z",
       "group": "",
@@ -1227,6 +1229,12 @@
       "group": "",
       "a": "Brazil",
       "b": "Norway"
+    },
+    {
+      "utc": "2026-07-06T00:00:00Z",
+      "group": "",
+      "a": "Mexico",
+      "b": "England"
     }
   ]
 }
