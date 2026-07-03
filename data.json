@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Switzerland–Algeria",
+    "updatedTill": "Australia–Egypt",
     "updatedDate": "Jul 3",
-    "lastSync": "2026-07-03T20:10:34.431Z"
+    "lastSync": "2026-07-03T23:08:44.896Z"
   },
   "players": [
     {
@@ -1191,17 +1191,19 @@
       "as": 2,
       "b": "Algeria",
       "bs": 0,
+      "group": ""
+    },
+    {
+      "date": "Jul 3",
+      "a": "Australia",
+      "as": 3,
+      "b": "Egypt",
+      "bs": 5,
       "group": "",
-      "lastLabel": "Switzerland–Algeria"
+      "lastLabel": "Australia–Egypt"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-07-03T18:00:00Z",
-      "group": "",
-      "a": "Australia",
-      "b": "Egypt"
-    },
     {
       "utc": "2026-07-03T22:00:00Z",
       "group": "",
