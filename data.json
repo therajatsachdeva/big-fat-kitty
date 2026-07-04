@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Colombia–Ghana",
+    "updatedTill": "Canada–Morocco",
     "updatedDate": "Jul 4",
-    "lastSync": "2026-07-04T14:24:42.834Z"
+    "lastSync": "2026-07-04T20:05:06.721Z"
   },
   "players": [
     {
@@ -266,7 +266,7 @@
       "gp": 3,
       "pts": 4,
       "stage": "LAST_16",
-      "eliminated": false
+      "eliminated": true
     },
     "Bosnia": {
       "code": "ba",
@@ -1215,17 +1215,19 @@
       "as": 1,
       "b": "Ghana",
       "bs": 0,
+      "group": ""
+    },
+    {
+      "date": "Jul 4",
+      "a": "Canada",
+      "as": 0,
+      "b": "Morocco",
+      "bs": 3,
       "group": "",
-      "lastLabel": "Colombia–Ghana"
+      "lastLabel": "Canada–Morocco"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-07-04T17:00:00Z",
-      "group": "",
-      "a": "Canada",
-      "b": "Morocco"
-    },
     {
       "utc": "2026-07-04T21:00:00Z",
       "group": "",
