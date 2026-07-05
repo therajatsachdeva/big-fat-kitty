@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Canada–Morocco",
+    "updatedTill": "Paraguay–France",
     "updatedDate": "Jul 4",
-    "lastSync": "2026-07-04T23:01:04.281Z"
+    "lastSync": "2026-07-05T05:00:50.183Z"
   },
   "players": [
     {
@@ -320,7 +320,7 @@
       "gp": 3,
       "pts": 4,
       "stage": "LAST_16",
-      "eliminated": false
+      "eliminated": true
     },
     "Australia": {
       "code": "au",
@@ -1223,17 +1223,19 @@
       "as": 0,
       "b": "Morocco",
       "bs": 3,
+      "group": ""
+    },
+    {
+      "date": "Jul 4",
+      "a": "Paraguay",
+      "as": 0,
+      "b": "France",
+      "bs": 1,
       "group": "",
-      "lastLabel": "Canada–Morocco"
+      "lastLabel": "Paraguay–France"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-07-04T21:00:00Z",
-      "group": "",
-      "a": "Paraguay",
-      "b": "France"
-    },
     {
       "utc": "2026-07-05T20:00:00Z",
       "group": "",
