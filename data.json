@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Paraguay–France",
-    "updatedDate": "Jul 4",
-    "lastSync": "2026-07-05T20:06:08.582Z"
+    "updatedTill": "Brazil–Norway",
+    "updatedDate": "Jul 5",
+    "lastSync": "2026-07-05T23:05:14.305Z"
   },
   "players": [
     {
@@ -122,7 +122,7 @@
       "gp": 3,
       "pts": 7,
       "stage": "LAST_16",
-      "eliminated": false
+      "eliminated": true
     },
     "Korea": {
       "code": "kr",
@@ -1231,17 +1231,19 @@
       "as": 0,
       "b": "France",
       "bs": 1,
+      "group": ""
+    },
+    {
+      "date": "Jul 5",
+      "a": "Brazil",
+      "as": 1,
+      "b": "Norway",
+      "bs": 2,
       "group": "",
-      "lastLabel": "Paraguay–France"
+      "lastLabel": "Brazil–Norway"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-07-05T20:00:00Z",
-      "group": "",
-      "a": "Brazil",
-      "b": "Norway"
-    },
     {
       "utc": "2026-07-06T00:00:00Z",
       "group": "",
