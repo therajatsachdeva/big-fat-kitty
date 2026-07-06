@@ -2,7 +2,7 @@
   "meta": {
     "updatedTill": "Mexico–England",
     "updatedDate": "Jul 6",
-    "lastSync": "2026-07-06T05:17:03.482Z"
+    "lastSync": "2026-07-06T08:46:25.014Z"
   },
   "players": [
     {
@@ -157,7 +157,7 @@
       "strength": 42,
       "gp": 3,
       "pts": 7,
-      "stage": "LAST_16",
+      "stage": "QUARTER_FINALS",
       "eliminated": false
     },
     "Uruguay": {
@@ -184,7 +184,7 @@
       "strength": 12,
       "gp": 3,
       "pts": 6,
-      "stage": "LAST_16",
+      "stage": "QUARTER_FINALS",
       "eliminated": false
     },
     "Portugal": {
@@ -1281,6 +1281,12 @@
       "group": "",
       "a": "France",
       "b": "Morocco"
+    },
+    {
+      "utc": "2026-07-11T21:00:00Z",
+      "group": "",
+      "a": "Norway",
+      "b": "England"
     }
   ]
 }
