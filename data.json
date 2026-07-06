@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Mexico–England",
+    "updatedTill": "Portugal–Spain",
     "updatedDate": "Jul 6",
-    "lastSync": "2026-07-06T20:47:20.180Z"
+    "lastSync": "2026-07-06T23:12:20.220Z"
   },
   "players": [
     {
@@ -194,7 +194,7 @@
       "gp": 3,
       "pts": 5,
       "stage": "LAST_16",
-      "eliminated": false
+      "eliminated": true
     },
     "Morocco": {
       "code": "ma",
@@ -1247,17 +1247,19 @@
       "as": 2,
       "b": "England",
       "bs": 3,
+      "group": ""
+    },
+    {
+      "date": "Jul 6",
+      "a": "Portugal",
+      "as": 0,
+      "b": "Spain",
+      "bs": 1,
       "group": "",
-      "lastLabel": "Mexico–England"
+      "lastLabel": "Portugal–Spain"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-07-06T19:00:00Z",
-      "group": "",
-      "a": "Portugal",
-      "b": "Spain"
-    },
     {
       "utc": "2026-07-07T00:00:00Z",
       "group": "",
