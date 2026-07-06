@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Brazil–Norway",
-    "updatedDate": "Jul 5",
-    "lastSync": "2026-07-05T23:05:14.305Z"
+    "updatedTill": "Mexico–England",
+    "updatedDate": "Jul 6",
+    "lastSync": "2026-07-06T05:17:03.482Z"
   },
   "players": [
     {
@@ -113,7 +113,7 @@
       "gp": 3,
       "pts": 9,
       "stage": "LAST_16",
-      "eliminated": false
+      "eliminated": true
     },
     "Brazil": {
       "code": "br",
@@ -1239,17 +1239,19 @@
       "as": 1,
       "b": "Norway",
       "bs": 2,
+      "group": ""
+    },
+    {
+      "date": "Jul 6",
+      "a": "Mexico",
+      "as": 2,
+      "b": "England",
+      "bs": 3,
       "group": "",
-      "lastLabel": "Brazil–Norway"
+      "lastLabel": "Mexico–England"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-07-06T00:00:00Z",
-      "group": "",
-      "a": "Mexico",
-      "b": "England"
-    },
     {
       "utc": "2026-07-06T19:00:00Z",
       "group": "",
