@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Argentina–Egypt",
+    "updatedTill": "Switzerland–Colombia",
     "updatedDate": "Jul 7",
-    "lastSync": "2026-07-07T20:45:08.630Z"
+    "lastSync": "2026-07-07T23:05:52.269Z"
   },
   "players": [
     {
@@ -1271,17 +1271,19 @@
       "as": 3,
       "b": "Egypt",
       "bs": 2,
+      "group": ""
+    },
+    {
+      "date": "Jul 7",
+      "a": "Switzerland",
+      "as": 4,
+      "b": "Colombia",
+      "bs": 3,
       "group": "",
-      "lastLabel": "Argentina–Egypt"
+      "lastLabel": "Switzerland–Colombia"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-07-07T20:00:00Z",
-      "group": "",
-      "a": "Switzerland",
-      "b": "Colombia"
-    },
     {
       "utc": "2026-07-09T20:00:00Z",
       "group": "",
