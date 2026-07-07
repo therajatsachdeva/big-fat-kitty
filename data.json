@@ -2,7 +2,7 @@
   "meta": {
     "updatedTill": "USA–Belgium",
     "updatedDate": "Jul 7",
-    "lastSync": "2026-07-07T04:57:39.988Z"
+    "lastSync": "2026-07-07T07:57:46.588Z"
   },
   "players": [
     {
@@ -85,7 +85,7 @@
       "strength": 50,
       "gp": 3,
       "pts": 7,
-      "stage": "LAST_16",
+      "stage": "QUARTER_FINALS",
       "eliminated": false
     },
     "USA": {
@@ -229,7 +229,7 @@
       "strength": 18,
       "gp": 3,
       "pts": 5,
-      "stage": "LAST_16",
+      "stage": "QUARTER_FINALS",
       "eliminated": false
     },
     "Japan": {
@@ -1285,6 +1285,12 @@
       "group": "",
       "a": "France",
       "b": "Morocco"
+    },
+    {
+      "utc": "2026-07-10T19:00:00Z",
+      "group": "",
+      "a": "Spain",
+      "b": "Belgium"
     },
     {
       "utc": "2026-07-11T21:00:00Z",
