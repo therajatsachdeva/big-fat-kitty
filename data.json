@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "USA–Belgium",
+    "updatedTill": "Argentina–Egypt",
     "updatedDate": "Jul 7",
-    "lastSync": "2026-07-07T15:41:26.143Z"
+    "lastSync": "2026-07-07T20:45:08.630Z"
   },
   "players": [
     {
@@ -392,7 +392,7 @@
       "gp": 3,
       "pts": 5,
       "stage": "LAST_16",
-      "eliminated": false
+      "eliminated": true
     },
     "Iran": {
       "code": "ir",
@@ -1263,17 +1263,19 @@
       "as": 1,
       "b": "Belgium",
       "bs": 4,
+      "group": ""
+    },
+    {
+      "date": "Jul 7",
+      "a": "Argentina",
+      "as": 3,
+      "b": "Egypt",
+      "bs": 2,
       "group": "",
-      "lastLabel": "USA–Belgium"
+      "lastLabel": "Argentina–Egypt"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-07-07T16:00:00Z",
-      "group": "",
-      "a": "Argentina",
-      "b": "Egypt"
-    },
     {
       "utc": "2026-07-07T20:00:00Z",
       "group": "",
