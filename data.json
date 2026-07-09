@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Switzerland–Colombia",
-    "updatedDate": "Jul 7",
-    "lastSync": "2026-07-09T20:42:22.254Z"
+    "updatedTill": "France–Morocco",
+    "updatedDate": "Jul 9",
+    "lastSync": "2026-07-09T23:16:22.958Z"
   },
   "players": [
     {
@@ -203,7 +203,7 @@
       "gp": 3,
       "pts": 7,
       "stage": "QUARTER_FINALS",
-      "eliminated": false
+      "eliminated": true
     },
     "Germany": {
       "code": "de",
@@ -1279,17 +1279,19 @@
       "as": 4,
       "b": "Colombia",
       "bs": 3,
+      "group": ""
+    },
+    {
+      "date": "Jul 9",
+      "a": "France",
+      "as": 2,
+      "b": "Morocco",
+      "bs": 0,
       "group": "",
-      "lastLabel": "Switzerland–Colombia"
+      "lastLabel": "France–Morocco"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-07-09T20:00:00Z",
-      "group": "",
-      "a": "France",
-      "b": "Morocco"
-    },
     {
       "utc": "2026-07-10T19:00:00Z",
       "group": "",
