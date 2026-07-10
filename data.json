@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "France–Morocco",
-    "updatedDate": "Jul 9",
-    "lastSync": "2026-07-10T20:14:28.169Z"
+    "updatedTill": "Spain–Belgium",
+    "updatedDate": "Jul 10",
+    "lastSync": "2026-07-10T23:01:43.937Z"
   },
   "players": [
     {
@@ -230,7 +230,7 @@
       "gp": 3,
       "pts": 5,
       "stage": "QUARTER_FINALS",
-      "eliminated": false
+      "eliminated": true
     },
     "Japan": {
       "code": "jp",
@@ -1287,17 +1287,19 @@
       "as": 2,
       "b": "Morocco",
       "bs": 0,
+      "group": ""
+    },
+    {
+      "date": "Jul 10",
+      "a": "Spain",
+      "as": 2,
+      "b": "Belgium",
+      "bs": 1,
       "group": "",
-      "lastLabel": "France–Morocco"
+      "lastLabel": "Spain–Belgium"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-07-10T19:00:00Z",
-      "group": "",
-      "a": "Spain",
-      "b": "Belgium"
-    },
     {
       "utc": "2026-07-11T21:00:00Z",
       "group": "",
