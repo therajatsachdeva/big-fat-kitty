@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "Spain–Belgium",
-    "updatedDate": "Jul 10",
-    "lastSync": "2026-07-11T22:55:19.910Z"
+    "updatedTill": "Argentina–Switzerland",
+    "updatedDate": "Jul 12",
+    "lastSync": "2026-07-12T04:28:31.646Z"
   },
   "players": [
     {
@@ -185,7 +185,7 @@
       "gp": 3,
       "pts": 6,
       "stage": "QUARTER_FINALS",
-      "eliminated": false
+      "eliminated": true
     },
     "Portugal": {
       "code": "pt",
@@ -293,7 +293,7 @@
       "gp": 3,
       "pts": 7,
       "stage": "QUARTER_FINALS",
-      "eliminated": false
+      "eliminated": true
     },
     "Haiti": {
       "code": "ht",
@@ -1287,8 +1287,24 @@
       "as": 2,
       "b": "Belgium",
       "bs": 1,
+      "group": ""
+    },
+    {
+      "date": "Jul 11",
+      "a": "Norway",
+      "as": 1,
+      "b": "England",
+      "bs": 2,
+      "group": ""
+    },
+    {
+      "date": "Jul 12",
+      "a": "Argentina",
+      "as": 3,
+      "b": "Switzerland",
+      "bs": 1,
       "group": "",
-      "lastLabel": "Spain–Belgium"
+      "lastLabel": "Argentina–Switzerland"
     }
   ],
   "upcoming": [
@@ -1297,18 +1313,6 @@
       "group": "",
       "a": "Mexico",
       "b": "England"
-    },
-    {
-      "utc": "2026-07-11T21:00:00Z",
-      "group": "",
-      "a": "Norway",
-      "b": "England"
-    },
-    {
-      "utc": "2026-07-12T01:00:00Z",
-      "group": "",
-      "a": "Argentina",
-      "b": "Switzerland"
     },
     {
       "utc": "2026-07-14T19:00:00Z",
