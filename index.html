@@ -62,6 +62,13 @@
     font-variant-numeric:tabular-nums;letter-spacing:-.03em}
   .pot-value .rs{font-size:.42em;vertical-align:.28em;margin-right:.06em;-webkit-text-fill-color:var(--gold-deep)}
   .pot-sub{display:flex;align-items:center;justify-content:center;gap:7px;color:var(--muted);font-size:12.5px;margin-top:6px}
+  .pot-champ{margin-top:12px;padding-top:11px;border-top:1px dashed var(--line);text-align:left}
+  .pot-champ .champ-title{font-size:13px;font-weight:700;color:var(--gold);line-height:1.4;text-align:center}
+  .pot-champ .payout{margin-top:9px;display:flex;flex-direction:column}
+  .pot-champ .prow{display:flex;justify-content:space-between;align-items:baseline;font-size:14px;font-weight:600;color:var(--text)}
+  .pot-champ .prow.winner{font-size:15px;color:var(--gold);font-weight:800}
+  .pot-champ .prow .amt{font-family:'Spline Sans Mono',monospace}
+  .pot-champ .pnote{font-size:11px;color:var(--muted);margin:1px 0 7px}
   .live-dot{width:7px;height:7px;border-radius:50%;background:var(--win);animation:pulse 2s infinite}
   @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(52,210,123,.5)}70%{box-shadow:0 0 0 7px rgba(52,210,123,0)}100%{box-shadow:0 0 0 0 rgba(52,210,123,0)}}
 
@@ -194,6 +201,7 @@
       <div class="pot-label">In the pot</div>
       <div class="pot-value num"><span class="rs">₹</span><span id="potValue">0</span></div>
       <div class="pot-sub"><span class="live-dot"></span> Updated till <span id="lastMatch">—</span></div>
+      <div class="pot-champ" id="potChamp" style="display:none"></div>
     </div>
   </header>
 
@@ -351,6 +359,11 @@ function computePot(){
   DATA.matches.forEach((m,i)=>{
     last = m.lastLabel ? m.lastLabel : m.a+"–"+m.b;
     lastDate = m.date || lastDate;
+    // consolation match (e.g. 3rd-place playoff): both teams already knocked out
+    // before this match → nobody's team is really "still in it", so no pot movement.
+    const aOut = outIdx[m.a]!==undefined && outIdx[m.a] < i;
+    const bOut = outIdx[m.b]!==undefined && outIdx[m.b] < i;
+    if(aOut && bOut) return;
     const events=[]; const oa=ownerOf(m.a), ob=ownerOf(m.b);
     if(m.as>m.bs){ if(oa) events.push([oa,500]); }
     else if(m.bs>m.as){ if(ob) events.push([ob,500]); }
@@ -362,7 +375,35 @@ function computePot(){
         owed[p.name]+=amt;
       }
   });
-  return {owed, total:Object.values(owed).reduce((a,b)=>a+b,0), last, lastDate};
+  // play pot = win/draw contributions only (before any salami)
+  const playPot = Object.values(owed).reduce((a,b)=>a+b,0);
+
+  // ---- championship salami + 70/30 payout (only once the tournament is over) ----
+  // The tournament is over when exactly one picked team has never been knocked out —
+  // the champion. Runner-up = the last team eliminated (loser of the final).
+  // 70% of the play pot goes to the winner, 30% to the runner-up, and the ₹4,000
+  // salami (8 × ₹500) rides on top of the winner's share — it is NOT split.
+  const stillIn = Object.keys(TEAM).filter(t => outIdx[t]===undefined);
+  let champTeam=null, champPlayer=null, salami=0;
+  let runnerTeam=null, runnerPlayer=null, winnerTake=0, runnerTake=0, winnerBase=0;
+  if(stillIn.length===1){
+    champTeam   = stillIn[0];
+    champPlayer = ownerOf(champTeam);
+    let mx=-1;
+    for(const t in outIdx){ if(outIdx[t]>mx){ mx=outIdx[t]; runnerTeam=t; } }
+    runnerPlayer = ownerOf(runnerTeam);
+    if(champPlayer){
+      for(const p of PLAYERS){ if(p.name!==champPlayer) owed[p.name]+=500; }
+      salami = 500*(PLAYERS.length-1);   // 8 × ₹500 = ₹4,000
+    }
+    winnerBase = Math.round(0.70*playPot);
+    runnerTake = playPot - winnerBase;   // guarantees 70 + 30 sums to the play pot exactly
+    winnerTake = winnerBase + salami;
+  }
+  const total = Object.values(owed).reduce((a,b)=>a+b,0);
+  return {owed, total, playPot, last, lastDate,
+          champTeam, champPlayer, salami, runnerTeam, runnerPlayer,
+          winnerTake, runnerTake, winnerBase};
 }
 
 /* ---------- win% (model, from strength + live status) ---------- */
@@ -412,6 +453,24 @@ function renderHero(){
   const dt = DATA.meta && DATA.meta.updatedDate ? DATA.meta.updatedDate : pot.lastDate;
   const lbl = (DATA.meta && DATA.meta.updatedTill) ? DATA.meta.updatedTill : pot.last;
   document.getElementById('lastMatch').textContent = lbl + (dt ? ' · '+dt : '');
+  const champEl = document.getElementById('potChamp');
+  if(champEl){
+    if(pot.champPlayer){
+      champEl.style.display = 'block';
+      let html = '<div class="champ-title">🏆 ' + pot.champPlayer + '\u2019s ' + pot.champTeam + ' are champions</div>';
+      html += '<div class="payout">';
+      html += '<div class="prow winner"><span class="who">🥇 ' + pot.champPlayer + '</span><span class="amt">₹' + fmt(pot.winnerTake) + '</span></div>';
+      html += '<div class="pnote">70% of ₹' + fmt(pot.playPot) + ' (₹' + fmt(pot.winnerBase) + ') + ₹' + fmt(pot.salami) + ' salami</div>';
+      if(pot.runnerPlayer){
+        html += '<div class="prow"><span class="who">🥈 ' + pot.runnerPlayer + '</span><span class="amt">₹' + fmt(pot.runnerTake) + '</span></div>';
+        html += '<div class="pnote">30% of ₹' + fmt(pot.playPot) + '</div>';
+      }
+      html += '</div>';
+      champEl.innerHTML = html;
+    } else {
+      champEl.style.display = 'none';
+    }
+  }
 }
 
 function renderBoard(){
