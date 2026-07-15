@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "France–Spain",
-    "updatedDate": "Jul 14",
-    "lastSync": "2026-07-15T20:02:51.246Z"
+    "updatedTill": "England–Argentina",
+    "updatedDate": "Jul 15",
+    "lastSync": "2026-07-15T23:00:30.549Z"
   },
   "players": [
     {
@@ -158,7 +158,7 @@
       "gp": 3,
       "pts": 7,
       "stage": "SEMI_FINALS",
-      "eliminated": false
+      "eliminated": true
     },
     "Uruguay": {
       "code": "uy",
@@ -1319,16 +1319,17 @@
       "as": 0,
       "b": "Spain",
       "bs": 2,
+      "group": ""
+    },
+    {
+      "date": "Jul 15",
+      "a": "England",
+      "as": 1,
+      "b": "Argentina",
+      "bs": 2,
       "group": "",
-      "lastLabel": "France–Spain"
+      "lastLabel": "England–Argentina"
     }
   ],
-  "upcoming": [
-    {
-      "utc": "2026-07-15T19:00:00Z",
-      "group": "",
-      "a": "England",
-      "b": "Argentina"
-    }
-  ]
+  "upcoming": []
 }
