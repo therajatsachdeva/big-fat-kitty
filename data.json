@@ -2,7 +2,7 @@
   "meta": {
     "updatedTill": "England–Argentina",
     "updatedDate": "Jul 15",
-    "lastSync": "2026-07-16T04:12:51.196Z"
+    "lastSync": "2026-07-16T06:40:29.987Z"
   },
   "players": [
     {
@@ -85,7 +85,7 @@
       "strength": 50,
       "gp": 3,
       "pts": 7,
-      "stage": "SEMI_FINALS",
+      "stage": "FINAL",
       "eliminated": false
     },
     "USA": {
@@ -103,7 +103,7 @@
       "strength": 48,
       "gp": 3,
       "pts": 9,
-      "stage": "SEMI_FINALS",
+      "stage": "THIRD_PLACE",
       "eliminated": true
     },
     "Mexico": {
@@ -157,7 +157,7 @@
       "strength": 42,
       "gp": 3,
       "pts": 7,
-      "stage": "SEMI_FINALS",
+      "stage": "THIRD_PLACE",
       "eliminated": true
     },
     "Uruguay": {
@@ -175,7 +175,7 @@
       "strength": 40,
       "gp": 3,
       "pts": 9,
-      "stage": "SEMI_FINALS",
+      "stage": "FINAL",
       "eliminated": false
     },
     "Norway": {
@@ -1331,5 +1331,18 @@
       "lastLabel": "England–Argentina"
     }
   ],
-  "upcoming": []
+  "upcoming": [
+    {
+      "utc": "2026-07-18T21:00:00Z",
+      "group": "",
+      "a": "France",
+      "b": "England"
+    },
+    {
+      "utc": "2026-07-19T19:00:00Z",
+      "group": "",
+      "a": "Spain",
+      "b": "Argentina"
+    }
+  ]
 }
