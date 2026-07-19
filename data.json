@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "England–Argentina",
-    "updatedDate": "Jul 15",
-    "lastSync": "2026-07-18T22:54:46.478Z"
+    "updatedTill": "France–England",
+    "updatedDate": "Jul 18",
+    "lastSync": "2026-07-19T04:24:17.221Z"
   },
   "players": [
     {
@@ -1327,17 +1327,19 @@
       "as": 1,
       "b": "Argentina",
       "bs": 2,
+      "group": ""
+    },
+    {
+      "date": "Jul 18",
+      "a": "France",
+      "as": 4,
+      "b": "England",
+      "bs": 6,
       "group": "",
-      "lastLabel": "England–Argentina"
+      "lastLabel": "France–England"
     }
   ],
   "upcoming": [
-    {
-      "utc": "2026-07-18T21:00:00Z",
-      "group": "",
-      "a": "France",
-      "b": "England"
-    },
     {
       "utc": "2026-07-19T19:00:00Z",
       "group": "",
