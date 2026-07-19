@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updatedTill": "France–England",
-    "updatedDate": "Jul 18",
-    "lastSync": "2026-07-19T20:02:53.455Z"
+    "updatedTill": "Spain–Argentina",
+    "updatedDate": "Jul 19",
+    "lastSync": "2026-07-19T22:56:42.555Z"
   },
   "players": [
     {
@@ -176,7 +176,7 @@
       "gp": 3,
       "pts": 9,
       "stage": "FINAL",
-      "eliminated": false
+      "eliminated": true
     },
     "Norway": {
       "code": "no",
@@ -1335,16 +1335,17 @@
       "as": 4,
       "b": "England",
       "bs": 6,
+      "group": ""
+    },
+    {
+      "date": "Jul 19",
+      "a": "Spain",
+      "as": 1,
+      "b": "Argentina",
+      "bs": 0,
       "group": "",
-      "lastLabel": "France–England"
+      "lastLabel": "Spain–Argentina"
     }
   ],
-  "upcoming": [
-    {
-      "utc": "2026-07-19T19:00:00Z",
-      "group": "",
-      "a": "Spain",
-      "b": "Argentina"
-    }
-  ]
+  "upcoming": []
 }
